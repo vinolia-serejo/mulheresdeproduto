@@ -1,5 +1,5 @@
 # mulheresdeproduto
-projeto desenvolvido para o Mulheres de produto.
+projeto desenvolvido para o Mulheres de Produto.
 
 links:
 https://mulheresdeproduto.wixsite.com/mdp-day-2019
