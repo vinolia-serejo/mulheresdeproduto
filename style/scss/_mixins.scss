@@ -12,8 +12,9 @@
     color: $cor-branca;
 }
 
-@mixin title($transform, $color) {
-    font-size: $font-size-title;
+@mixin title($tamanho, $transform, $color) {
+    font-size: $tamanho;
     text-transform: $transform;
     color: $color;
 }
+

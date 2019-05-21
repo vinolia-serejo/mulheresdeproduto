@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap');
 
 body{
-    font-family: $font-family;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: $fonte-padrao;
 }
+
 
 button{
     border: none;
@@ -28,8 +30,12 @@ a{
     text-decoration: none;
     color: inherit;
 
-    :hover{
+    &:hover{
         opacity: 0.6;
     }
+}
+
+.invisible {
+    display: none;
 }
 

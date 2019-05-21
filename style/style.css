@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap");
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
 }
 
 button {
@@ -27,65 +28,169 @@ a {
   color: inherit;
 }
 
-a :hover {
+a:hover {
   opacity: 0.6;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+.invisible {
+  display: none;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+.nav {
+  padding: 30px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
-body {
+nav-bg {
+  background-color: #fff;
+}
+
+.flex--nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container--menu {
+  width: 70%;
+}
+
+.logo--nav {
+  width: 200px;
+}
+
+.menu li {
+  padding: 0 15px;
+  color: #990c6e;
+  font-weight: 600;
+}
+
+.btn {
+  background-color: #f7425a;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.281);
+          box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.281);
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #f7223e;
+}
+
+.header--bg {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.918)), to(rgba(0, 0, 0, 0.349))), url("../assets/imagens/bg-img.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.918), rgba(0, 0, 0, 0.349)), url("../assets/imagens/bg-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100vw;
+}
+
+.flex--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.header--titulo {
+  font-size: 180px;
+  text-transform: uppercase;
+  color: #990c6e;
+  font-weight: 400;
+  padding: 0px;
+  margin-top: 150px;
+  border: 0px;
   line-height: 1;
 }
 
-ol, ul {
-  list-style: none;
+.header--subtitulo {
+  font-size: 29px;
+  text-transform: capitalize;
+  color: #990c6e;
+  font-weight: 400;
+  padding-bottom: 15px;
+  border: 0px;
 }
 
-blockquote, q {
-  quotes: none;
+.btn--header {
+  font-size: 25px;
+  padding: 20px 60px;
+  margin: 30px;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
+.call {
+  background-color: #F0F0F0;
+  padding: 50px;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.flex--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-button {
-  border: none;
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box {
+  width: 80%;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.li-bold {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.icon--header {
+  width: 70px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */
