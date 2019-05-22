@@ -357,6 +357,10 @@ a:hover {
   padding: 30px;
 }
 
+.patrons h2 {
+  text-align: center;
+}
+
 .patron-1 {
   height: 100px;
   padding: 10px;
@@ -413,8 +417,6 @@ a:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 15px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .title-patron {
@@ -424,7 +426,23 @@ a:hover {
   font-size: 16px;
   padding-top: 10px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #990c6e;
+  border-bottom: 2px solid #990c6e;
+  text-align: center;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 700px) {
@@ -454,14 +472,8 @@ a:hover {
     padding: 5px;
   }
   .flex-patron {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
