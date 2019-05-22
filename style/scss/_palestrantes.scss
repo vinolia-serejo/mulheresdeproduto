@@ -1,16 +1,56 @@
 
-.cards{
-    @include flex(center, center);
+h2{
+    padding: 5%;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase; 
+    font-size: 50px;
+    color: $cor-branca; 
 }
 
+.palestrantes{
+    background-color: $cor-fundo-roxo
+}
 
-.container{
-   .cards{
-    display:flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center; 
-    width:300px;
+.cards{
+    @include flex(center, center);
+    flex-wrap: wrap;
+}
+
+.row_cards{
+    @include flex(center, space-between);
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.card{
+    @include flex(center, flex-end);
+    flex-flow: column wrap;
+    width: 20%;
+    margin: 5% 2.5% 0% 2.5%;
     height: 300px;
-   }
+    -webkit-box-shadow: 7px 6px 18px -5px rgba(0,0,0,0.4);
+    -moz-box-shadow: 7px 6px 18px -5px rgba(0,0,0,0.4);
+    box-shadow: 7px 6px 18px -5px rgba(0,0,0,0.4);
+    .texto__card{
+        background-color: white;
+        width: 100%
+    }
+
+    .imagem__card > img {
+        width:100%;
+       
+    }
+
+    p{ 
+        margin: 5px 0px 10px 0px;
+        padding-left: 10px
+    }
+
+    h6 {
+        margin: 10px 0px 0px 0px;
+        padding-left: 10px;
+        color: $cor-btn;
+        font-size: $fonte-padrao;
+    }
 }

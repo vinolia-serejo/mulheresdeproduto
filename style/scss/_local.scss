@@ -1,18 +1,46 @@
 .background{
     // background-image: linear-gradient(rgba(93, 32, 143, 0), rgba(140, 0, 255, 0)), url("../assets/imagens/nubank.jpg");
     background-image: linear-gradient( rgba(217, 0, 255, 0.322)), url("../assets/imagens/nubank.jpg");
-    background-position: center;
+    background-position:cover;
     background-repeat: no-repeat; 
-    height: 85vh;
+    height: 124vh;
     width:100%;
+    display: flex;
+    justify-content: flex-end;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.linha{
+    border: solid 1px $cor-branca; 
+}
+
+.logo{
+    padding: 2%; 
+    text-align: center; 
 }
 
 .textos{
+    width: 50%; 
     background-color: $cor-fundo-roxo;
+    color: $cor-branca; 
+    font-family: $font-family;
+
 
 }
 .endereco{
-    
+    @include flex(center, center);
+    flex-direction: column;
+    margin: 0 auto; 
     max-width:40%; 
+    font-family: $font-family;
+}
+
+.mapa  {
+    @include flex(center, center); 
+}
+.caixa_mapa{
+    height: 341px;
 }

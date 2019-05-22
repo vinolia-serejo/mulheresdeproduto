@@ -34,18 +34,84 @@ a :hover {
 .background {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 0, 255, 0.322))), url("../assets/imagens/nubank.jpg");
   background-image: linear-gradient(rgba(217, 0, 255, 0.322)), url("../assets/imagens/nubank.jpg");
+  background-position: cover;
+  background-repeat: no-repeat;
+  height: 124vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  height: 85vh;
-  width: 100%;
+  background-size: cover;
+}
+
+.linha {
+  border: solid 1px #fff;
+}
+
+.logo {
+  padding: 2%;
+  text-align: center;
 }
 
 .textos {
+  width: 50%;
   background-color: #792b77;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .endereco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
   max-width: 40%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.mapa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.caixa_mapa {
+  height: 341px;
+}
+
+h2 {
+  padding: 5%;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #fff;
+}
+
+.palestrantes {
+  background-color: #792b77;
 }
 
 .cards {
@@ -58,27 +124,70 @@ a :hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.container .cards {
+.row_cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 300px;
-  height: 300px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
 }
 
-body {
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 20%;
+  margin: 5% 2.5% 0% 2.5%;
+  height: 300px;
+  -webkit-box-shadow: 7px 6px 18px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 7px 6px 18px -5px rgba(0, 0, 0, 0.4);
+}
+
+.card .texto__card {
+  background-color: white;
+  width: 100%;
+}
+
+.card .imagem__card > img {
+  width: 100%;
+}
+
+.card p {
+  margin: 5px 0px 10px 0px;
+  padding-left: 10px;
+}
+
+.card h6 {
+  margin: 10px 0px 0px 0px;
+  padding-left: 10px;
+  color: #f7425a;
+  font-size: 22px;
+}
+
+* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
