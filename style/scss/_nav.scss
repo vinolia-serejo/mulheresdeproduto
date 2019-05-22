@@ -9,7 +9,7 @@
 }
 
 .nav--bg {
-    background-color: rgba($color: #fff, $alpha: 1.0);
+    background-color: rgba($color: #f0f0f0, $alpha: 1.0);
     box-shadow: 6px 6px 3px rgba(37, 37, 37, 0.192);
     z-index: 99;
 }
@@ -30,6 +30,7 @@
     padding: 0 15px;
     color: $cor-fonte-roxo;
     font-weight: 600;
+    text-transform: uppercase;
 
 }
 
@@ -43,12 +44,16 @@
     color: $cor-branca;
     font-size: $fonte-btn;
     font-weight: 600;
-    box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.281);
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.281);
     text-transform: uppercase;
 }
 
 .btn:hover {
     background-color: #f7223e;
+}
+
+.m-menu {
+    display: none;
 }
 
 @media(max-width:800px){
@@ -63,18 +68,43 @@
 
     .responsive-menu {
         display: block;
-        width: 20px;
+        width: 25px;
+        cursor: pointer;
     }
 
     .container--menu {
         width: 22%;
     }
+
+    .m-menu {
+        display: block;
+        text-align: right; 
+    }
+
+    .flex--m-mobile {
+        @include flex(flex-end, flex-end);
+        flex-direction: column; 
+    }
+
+    .m-menu li {
+        color: $cor-fonte-roxo;
+        font-weight: 600;
+        padding: 15px 0; 
+        text-transform: uppercase; 
+        border-bottom: 2px solid $cor-branca;
+        width: 30%;
+    }
+
+    // .m-menu--bg {
+    //     background-color: $cor-branca;
+    // }
+
 }
 
 @media(max-width:450px){
 
     .responsive-menu {
-        width: 15px;
+        width: 20px;
     }
 
     .btn--nav {
