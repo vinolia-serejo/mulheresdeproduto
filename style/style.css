@@ -312,7 +312,7 @@ a:hover {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 700px) {
   .header--bg {
     min-height: 20vh;
     height: 300px;
@@ -353,8 +353,116 @@ a:hover {
   }
 }
 
-.teste {
-  width: 300px;
+.patrons {
+  padding: 30px;
+}
+
+.patron-1 {
+  height: 100px;
+  padding: 10px;
+}
+
+.patron-2 {
+  height: 50px;
+  padding: 10px;
+}
+
+.patron-2a {
+  height: 30px;
+  padding: 10px;
+}
+
+.patron-2b {
+  height: 35px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.patron-3 {
+  height: 40px;
+  padding: 10px;
+}
+
+.patron-3a {
+  height: 100px;
+  padding: 10px;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-patron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.title-patron {
+  color: #990c6e;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #990c6e;
+}
+
+@media (max-width: 700px) {
+  .patron-1 {
+    height: 50px;
+    padding: 5px;
+  }
+  .patron-2 {
+    height: 30px;
+    padding: 5px;
+  }
+  .patron-2a {
+    height: 20px;
+    padding: 5px;
+  }
+  .patron-2b {
+    height: 23px;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  .patron-3 {
+    height: 25px;
+    padding: 5px;
+  }
+  .patron-3a {
+    height: 55px;
+    padding: 5px;
+  }
+  .flex-patron {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 * {
