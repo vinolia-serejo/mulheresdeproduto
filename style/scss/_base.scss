@@ -1,9 +1,15 @@
 // font-family
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap');
 
-body{
-    font-family: $font-family;
+
+html{
+    scroll-behavior: smooth;
 }
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: $fonte-padrao;
+}
+
 
 button{
     border: none;
@@ -28,8 +34,18 @@ a{
     text-decoration: none;
     color: inherit;
 
-    :hover{
+    &:hover{
         opacity: 0.6;
     }
 }
 
+.invisible {
+    display: none;
+}
+
+
+@media(max-width: 800px){
+    body {
+        font-size: $fonte-padrao-mobile;
+    }
+}

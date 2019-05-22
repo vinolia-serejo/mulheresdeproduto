@@ -1,31 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel = "stylesheet" href = './style/style.css'>
-        <title>Mulheres de Produto</title>
-    </head>
-    <body>
-        <!--Barra de Navegação - NAV-->
-        <section>
 
-        </section>
-        <!--Seção do header -->
-        <section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='./style/style.css'>
+    <title>Mulheres de Produto</title>
+</head>
 
-        </section>
-        <!--Seção do Moisaico-->
-        <section>
+<body>
+    <!--Barra de Navegação - NAV-->
+    <nav class="nav">
+        <div class="container flex--nav">
+            <div class="flex--nav container--menu">
+                <img src="./assets/imagens/logo_mdp.png" alt="logo mulheres de produto" title="logo mulheres de produto"
+                    class="logo--nav">
+                <ul class="flex--nav menu">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#palestrantes">Palestrantes</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#local">Local</a></li>
+                    <li><a href="#patrocinio">Patrocínio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <button id="btn-nav" class="btn btn--nav invisible">Inscrições</button>
+            <img src="./assets/imagens/menu.png" class="responsive-menu">
+        </div>
 
-        </section>
-        <!--Seção Sobre com fotos do evento -->
-        <section>
+        <div class="m-menu--bg m-menu">
+                <div class="container">
+                    <ul class="flex--m-mobile">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#palestrantes">Palestrantes</a></li>
+                        <li><a href="#agenda">Agenda</a></li>
+                        <li><a href="#local">Local</a></li>
+                        <li><a href="#patrocinio">Patrocínio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
 
-        </section>
-        <!--Seção dos Cards dos palestrantes-->
-        <section class="palestrantes">
+    </nav>
+
+    <!--Seção do header -->
+
+    <header class="header--bg">
+        <div class="container flex--header">
+            <h1 class="header--titulo">MPDAY-2020</h1>
+            <div class="subtitle-container flex">
+                <span class="line-subtitle"></span>
+                <h3 class="header--subtitulo">
+                    Seja uma mulher que levanta outras mulheres</h3><span class="line-subtitle"></span>
+            </div>
+            <button class="btn btn--header">Inscrições</button>
+        </div>
+
+    </header>
+    <!-- Seção do Call -->
+    <section>
+        <div class="call">
+            <div class="container flex--container">
+                <div class="flex call-mg">
+                    <img class="icon--header" src="./assets/imagens/icons/icon-place.png">
+                    <ul class="box">
+                        <li class="li-bold">Localização</li>
+                        <li>Nubank</li>
+                        <li>São Paulo - SP</li>
+                    </ul>
+                </div>
+                <div class="flex call-mg">
+                    <img class="icon--header" src="./assets/imagens/icons/icon-calendar.png">
+                    <ul class="box">
+                        <li class="li-bold">Data e Hora</li>
+                        <li>04 de Maio 2019</li>
+                        <li>De 9h às 20h30</li>
+                    </ul>
+                </div>
+                <div class="flex call-mg">
+                    <img class="icon--header" src="./assets/imagens/icons/icon-microphone.png">
+                    <ul class="box">
+                        <li class="li-bold">Palestrantes</li>
+                        <li>13 profissionais</li>
+
+                    </ul>
+                </div>
+                <div class="flex call-mg">
+                    <img class="icon--header" src="./assets/imagens/icons/icon-people.png">
+                    <ul class="box">
+                        <li class="li-bold">Participantes</li>
+                        <li>300 mulheres</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seção do Moisaico-->
+
+
+    <!--Seção dos Cards dos palestrantes-->
+    <section class="palestrantes" id="palestrantes">
             <div class="container">
             <h2>Palestrantes</h2>
             <div class="cards">
@@ -106,37 +183,27 @@
             </div>
         </div>
         </section>
-        <!--Seção da Agenda do evento-->
-        <section>
-
-        </section>
-        <!--Seção do Local-->
-        <section class="container background">
-            <div class="textos">
-                <div class="logo">
-                    <img src="./assets/imagens/logo_nubank.png">
+        <!--Seção do Local/Mapa-->
+        <section class="container background" id="local">
+                <div class="textos">
+                    <div class="logo">
+                        <img class="logo_img" src="./assets/imagens/logo_nubank.png">
+                    </div>
+                    <div class="endereco">
+                        <div class="flex-linha">
+                        <span class="linha"></span>
+                        <p class="endereco_texto">RUA CAPOTE VALENTE, 39 - PINHEIROS, SÃO PAULO-BRASIL</p>
+                        </div>
+                        <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam consequuntur ut, cupiditate vero esse quo quae iure fuga, vel officiis omnis ipsam corporis ipsa reprehenderit </p>
+                    </div>
+                    <div class="mapa"><iframe class="caixa_mapa"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2112380826725!2d-46.67568418538394!3d-23.560855667457933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5781a3cf6571%3A0xf587ab66d7cdfeb5!2sR.+Capote+Valente%2C+39+-+Pinheiros%2C+S%C3%A3o+Paulo+-+SP%2C+05402-000!5e0!3m2!1spt-BR!2sbr!4v1558537120824!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
                 </div>
-                <div class="endereco">
-                    <span class="linha"></span><p>RUA CAPOTE VALENTE, 39 - PINHEIROS, SÃO PAULO-BRASIL</p>
-                    <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam consequuntur ut, cupiditate vero esse quo quae iure fuga, vel officiis omnis ipsam corporis ipsa reprehenderit </p>
-                </div>
-                <div class="mapa"><iframe class="caixa_mapa"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2112380826725!2d-46.67568418538394!3d-23.560855667457933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5781a3cf6571%3A0xf587ab66d7cdfeb5!2sR.+Capote+Valente%2C+39+-+Pinheiros%2C+S%C3%A3o+Paulo+-+SP%2C+05402-000!5e0!3m2!1spt-BR!2sbr!4v1558537120824!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-            </div>
-        </section>
-        <!--Seção dos Patrocinadores-->
-        <section>
+            </section>
 
-        </section>
-        <!--Seção do contato-->
-        <section>
 
-        </section>
-        <!--footer-->
-        <footer>
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 
-        </footer>
+</body>
 
-        <script type="javascript" src="js/jquery-3.4.1.min.js"></script>
-        <script type="javascript" src="./js/main.js"></script>
-    </body>
 </html>
