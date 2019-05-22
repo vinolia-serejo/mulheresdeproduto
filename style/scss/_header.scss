@@ -4,8 +4,8 @@
     url('../assets/imagens/bg-img.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
-    height: 80vh;
-    width: 100vw;
+    min-height: 80vh;
+    height: 600px;
 
 }
 
@@ -16,20 +16,30 @@
 }
 
 .header--titulo{
-    @include title($fonte-titulo-principal, uppercase, $cor-fonte-roxo);
+    @include title($fonte-titulo-principal, uppercase, $cor-branca);
     font-weight: 400;
     padding: 0px;
     margin-top: 150px;
     border: 0px;
+    opacity: 0.7;
     line-height: 1;
+    text-shadow: 6px 6px 3px rgba(0, 0, 0, 0.281);
+    z-index: 0;
 
 }
 
 .header--subtitulo{
-    @include title($fonte-subtitulo-principal, capitalize, $cor-fonte-roxo);
+    @include title($fonte-subtitulo-principal, capitalize, $cor-branca);
     font-weight: 400;
     padding-bottom: 15px;
+    padding: 0 15px;
     border: 0px;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.247);
+}
+
+.line-subtitle {
+    border-top: 1px solid $cor-branca;
+    width: 150px;
 }
 
 .btn--header {
@@ -52,7 +62,7 @@
 
 .box {
     width: 80%;
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 10px;
 }
 
@@ -62,8 +72,89 @@
 }
 
 .icon--header {
-    width: 70px;
+    width: 50px;
 }
 
+@media(max-width:800px){
 
+    .header--bg {
+        min-height: 40vh;
+        height: 300px;
+        width: 100%;
+    }
 
+    .header--titulo{
+        font-size: 80px;
+    }
+
+    .header--subtitulo {
+        font-size: 16px;
+    }
+
+    .line-subtitle {
+        width: 40px;
+    }
+
+    .btn--header {
+        font-size: 20px;
+        padding: 15px 45px;
+    }
+
+    .box {
+        font-size: 12px;
+        width: 70%;
+    }
+
+    .icon--header {
+        width: 30px;
+    }
+
+    .flex--container{
+        @include flex(center, space-between);
+    }
+
+}
+
+@media(max-width:420px){
+
+    .header--bg {
+        min-height: 20vh;
+        height: 300px;
+        width: 100%;
+    }
+
+    .header--titulo{
+        font-size: 50px;
+        margin-top: 60px;
+    }
+
+    .subtitle-container {
+        display: none;
+    }
+
+    .btn--header {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 20px;
+    }
+
+    .flex--container{
+        @include flex(center, space-between);
+        flex-direction: column; 
+    }
+
+    .call {
+        padding: 25px;
+    }
+    
+    .call-mg {
+        margin: 15px 0; 
+    }
+
+}
+
+// LEMBRAR DA APAGAR 
+
+.teste {
+    width: 300px;
+}

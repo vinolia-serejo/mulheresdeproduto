@@ -4,10 +4,14 @@
     position: fixed;
     width: 100%; 
     top: 0; 
+    background-color: rgba($color: #ffffff, $alpha: 0.0);
+    transition: 0.3s all;
 }
 
-nav-bg {
-    background-color: $cor-branca;
+.nav--bg {
+    background-color: rgba($color: #fff, $alpha: 1.0);
+    box-shadow: 6px 6px 3px rgba(37, 37, 37, 0.192);
+    z-index: 99;
 }
 
 .flex--nav{
@@ -15,7 +19,7 @@ nav-bg {
 }
 
 .container--menu {
-    width: 70%;
+    width: 76%;
 }
 
 .logo--nav {
@@ -27,6 +31,10 @@ nav-bg {
     color: $cor-fonte-roxo;
     font-weight: 600;
 
+}
+
+.responsive-menu {
+    display: none;
 }
 
 .btn {
@@ -41,4 +49,43 @@ nav-bg {
 
 .btn:hover {
     background-color: #f7223e;
+}
+
+@media(max-width:800px){
+
+    .menu {
+        display: none;
+    }
+
+    .logo--nav {
+        width: 150px;
+    }
+
+    .responsive-menu {
+        display: block;
+        width: 20px;
+    }
+
+    .container--menu {
+        width: 22%;
+    }
+}
+
+@media(max-width:450px){
+
+    .responsive-menu {
+        width: 15px;
+    }
+
+    .btn--nav {
+        font-size: 12px;
+        padding: 10px 20px;
+        box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.171);
+    }
+    .logo--nav {
+        min-width: 100px;
+        // margin-right: 50px;
+    }
+
+
 }
