@@ -54,6 +54,10 @@ margin: 5px 0;
     text-transform: uppercase; 
   }
 
+  .submit-contato:hover {
+    background-color: rgba(121, 43, 119, 0.8);
+  }
+
   @media (max-width: 800px){
       .input--email, .input {
           width: 80%;
