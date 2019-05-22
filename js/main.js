@@ -21,7 +21,11 @@ $(document).ready(function () {
 
   $('.responsive-menu').click(function(){
     $('.m-menu').slideToggle();
-    $('nav').addClass('nav--bg');
+    if ($(document).scrollTop() > 200){
+      $('nav').addClass('nav--bg');
+    } else {
+      $('nav').toggleClass('nav--bg');
+    }
   })
 
 });
