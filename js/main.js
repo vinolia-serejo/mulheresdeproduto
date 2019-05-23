@@ -28,4 +28,8 @@ $(document).ready(function () {
     }
   })
 
+  $('#mobile-menu-options').find('li').click(function(){
+    $('.m-menu').slideUp('slow');
+  })
+
 });

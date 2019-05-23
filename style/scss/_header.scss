@@ -75,6 +75,19 @@
     width: 50px;
 }
 
+@media(max-width:1200px){
+    .header--titulo{
+        font-size: 100px;
+    }
+    .header--subtitulo {
+        font-size: 16px;
+    }
+
+    .line-subtitle {
+        width: 40px;
+    }
+}
+
 @media(max-width:800px){
 
     .header--bg {
@@ -86,15 +99,7 @@
     .header--titulo{
         font-size: 80px;
     }
-
-    .header--subtitulo {
-        font-size: 16px;
-    }
-
-    .line-subtitle {
-        width: 40px;
-    }
-
+    
     .btn--header {
         font-size: 20px;
         padding: 15px 45px;
@@ -115,7 +120,7 @@
 
 }
 
-@media(max-width:420px){
+@media(max-width:700px){
 
     .header--bg {
         min-height: 20vh;
@@ -151,10 +156,4 @@
         margin: 15px 0; 
     }
 
-}
-
-// LEMBRAR DA APAGAR 
-
-.teste {
-    width: 300px;
 }
