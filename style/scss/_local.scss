@@ -1,5 +1,6 @@
 .background{
-    background-image: linear-gradient( rgba(217, 0, 255, 0.322)), url("../assets/imagens/nubank.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 0, 255, 0.322))), url("../assets/imagens/nubank.jpg");
+    background-image: linear-gradient(rgba(217, 0, 255, 0.322)), url("../assets/imagens/nubank.jpg");
     background-position:cover;
     height: 124vh;
     width:100%;
@@ -66,4 +67,110 @@
     margin-top: 5%;
     width: 447px;
     height: 300px;
+}
+
+@media(max-width:600px){
+    
+    .background {
+        background-color: $cor-fundo-roxo;
+        @include flex(center, center); 
+        background-repeat: no-repeat;
+        background-size: cover;  
+        background-position: center;
+    }
+    .logo_img{
+        margin-top: 5%; 
+        width: 191px; 
+    }
+    .logo{
+        height: 164px;
+        padding: 2%; 
+        text-align: center; 
+    }
+    .textos{
+        width: 82%; 
+    }
+    .caixa_mapa{
+        height: 241px
+    }
+}
+
+
+@media(max-width: 420px){
+
+    .background {
+        background-color: $cor-fundo-roxo;
+        @include flex(center, center); 
+        background-repeat: no-repeat;
+        background-size: cover;  
+        background-position: center;
+    }
+    .logo_img{
+        margin-top: 5%; 
+        width: 191px; 
+    }
+
+    .logo{
+        height: 164px;
+        padding: 2%; 
+        text-align: center; 
+    }
+    .textos{
+        width: 82%; 
+    }
+    .caixa_mapa{
+        height: 241px
+    }
+}
+
+@media(max-width: 720px){
+    .background {
+        background-color: $cor-fundo-roxo;
+        @include flex(center, center); 
+        background-repeat: no-repeat;
+        background-size: cover;  
+        background-position: center;
+    }
+    .logo_img{
+        margin-top: 5%; 
+        width: 191px; 
+    }
+
+    .logo{
+        height: 164px;
+        padding: 2%; 
+        text-align: center; 
+    }
+    .textos{
+        width: 82%; 
+    }
+    .caixa_mapa{
+        height: 241px
+    }
+}
+
+@media(max-width: 900px){
+    .background {
+        background-color: $cor-fundo-roxo;
+        @include flex(center, center); 
+        background-repeat: no-repeat;
+        background-size: cover;  
+        background-position: center;
+    }
+    .logo_img{
+        margin-top: 5%; 
+        width: 191px; 
+    }
+
+    .logo{
+        height: 164px;
+        padding: 2%; 
+        text-align: center; 
+    }
+    .textos{
+        width: 82%; 
+    }
+    .caixa_mapa{
+        height: 241px
+    }
 }
