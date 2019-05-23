@@ -24,6 +24,7 @@
 
 .logo--nav {
     width: 200px; 
+   margin-right: 35px;
 }
 
 .menu li {
@@ -31,6 +32,8 @@
     color: $cor-fonte-roxo;
     font-weight: 600;
     text-transform: uppercase;
+    font-size: $fonte-padrao;
+    margin: 0;
 
 }
 
@@ -56,11 +59,6 @@
     display: none;
 }
 
-@media(max-width:1200px){
-    .menu li {
-        font-size: 14px;
-    }
-}
 
 @media(max-width:800px){
 
