@@ -4,7 +4,7 @@
 
 .container__conteudo {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
 }
 
 .container__conteudo--imagem {
@@ -28,6 +28,7 @@ width: 65%;
     width: 100%;
     height: 45px;
     font-size: $fonte-btn;
+    margin-bottom: 30px;
 }
 
 .container__borda{
@@ -74,10 +75,15 @@ ul {
 
 @media (max-width: $mobile) {
     .container__conteudo {
-        width: 87%;
+        display: flex;
+        flex-direction: column;
     }
 
     .container__conteudo--imagem {
         display: none;
     }
 }
+
+
+
+

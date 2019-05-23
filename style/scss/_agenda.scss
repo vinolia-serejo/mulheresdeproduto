@@ -1,0 +1,44 @@
+table {
+    background-color: $cor-fundo-cinza;
+    width: 60%;
+    
+    
+    margin: 0.5% auto;
+
+    tr {
+        height: 30px;
+    }
+
+    tr:first-child {
+        color: $cor-btn;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+}
+
+.destaque__agenda {
+    color: $cor-principal;
+}
+
+.container__agenda {
+ h2 {
+    font-size: 30px;
+    text-align: center;
+    color: $cor-fonte-roxo;
+    padding: 3%;
+    text-transform: uppercase;
+ }
+}
+
+.container__horario {
+    width: 25%;
+    padding-left: 20px;
+}
+
+@media (max-width: $mobile) {
+    .container__horario {
+        width: 20%;
+    }
+    
+}
