@@ -13,26 +13,26 @@
 <body>
     <!--Barra de Navegação - NAV-->
     <nav class="nav">
-        <div class="container flex--nav">
-            <div class="flex--nav container--menu">
-                <img src="./assets/imagens/logo_mdp.png" alt="logo mulheres de produto" title="logo mulheres de produto"
-                    class="logo--nav">
-                <ul class="flex--nav menu">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#palestrantes">Palestrantes</a></li>
-                    <li><a href="#agenda">Agenda</a></li>
-                    <li><a href="#local">Local</a></li>
-                    <li><a href="#patrocinio">Patrocínio</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
+            <div class="container flex--nav">
+                <div class="flex--nav container--menu">
+                    <img src="./assets/imagens/logo_mdp.png" alt="logo mulheres de produto" title="logo mulheres de produto"
+                        class="logo--nav">
+                    <ul class="flex--nav menu">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#palestrantes">Palestrantes</a></li>
+                        <li><a href="#agenda">Agenda</a></li>
+                        <li><a href="#local">Local</a></li>
+                        <li><a href="#patrocinio">Patrocínio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <button id="btn-nav" class="btn btn--nav invisible">Inscrições</button>
+                <img src="./assets/imagens/menu.png" class="responsive-menu">
             </div>
-            <button id="btn-nav" class="btn btn--nav invisible">Inscrições</button>
-            <img src="./assets/imagens/menu.png" class="responsive-menu">
-        </div>
-
-        <div class="m-menu--bg m-menu">
+    
+            <div class="m-menu--bg m-menu">
                 <div class="container">
-                    <ul class="flex--m-mobile">
+                    <ul id="mobile-menu-options" class="flex--m-mobile">
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#palestrantes">Palestrantes</a></li>
                         <li><a href="#agenda">Agenda</a></li>
@@ -42,128 +42,294 @@
                     </ul>
                 </div>
             </div>
-
-    </nav>
+    
+        </nav>
 
     <!--Seção do header -->
 
     <header class="header--bg">
-        <div class="container flex--header">
-            <h1 class="header--titulo">MPDAY-2020</h1>
-            <div class="subtitle-container flex">
-                <span class="line-subtitle"></span>
-                <h3 class="header--subtitulo">
-                    Seja uma mulher que levanta outras mulheres</h3><span class="line-subtitle"></span>
+            <div class="container flex--header">
+                <h1 class="header--titulo">MPDAY-2020</h1>
+                <div class="subtitle-container flex">
+                    <span class="line-subtitle"></span>
+                    <h3 class="header--subtitulo">
+                        Seja uma mulher que levanta outras mulheres</h3><span class="line-subtitle"></span>
+                </div>
+                <button class="btn btn--header">Inscrições</button>
             </div>
-            <button class="btn btn--header">Inscrições</button>
-        </div>
-
-    </header>
-    <!-- Seção do Call -->
-    <section>
-        <div class="call">
-            <div class="container flex--container">
-                <div class="flex call-mg">
-                    <img class="icon--header" src="./assets/imagens/icons/icon-place.png">
-                    <ul class="box">
-                        <li class="li-bold">Localização</li>
-                        <li>Nubank</li>
-                        <li>São Paulo - SP</li>
-                    </ul>
-                </div>
-                <div class="flex call-mg">
-                    <img class="icon--header" src="./assets/imagens/icons/icon-calendar.png">
-                    <ul class="box">
-                        <li class="li-bold">Data e Hora</li>
-                        <li>04 de Maio 2019</li>
-                        <li>De 9h às 20h30</li>
-                    </ul>
-                </div>
-                <div class="flex call-mg">
-                    <img class="icon--header" src="./assets/imagens/icons/icon-microphone.png">
-                    <ul class="box">
-                        <li class="li-bold">Palestrantes</li>
-                    
-                        <li>300 mulheres</li>
-                    </ul>
+    
+        </header>
+        <!-- Seção do Call -->
+        <section>
+            <div class="call">
+                <div class="container flex--container">
+                    <div class="flex call-mg">
+                        <img class="icon--header" src="./assets/imagens/icons/icon-place.png">
+                        <ul class="box">
+                            <li class="li-bold">Localização</li>
+                            <li>Nubank</li>
+                            <li>São Paulo - SP</li>
+                        </ul>
+                    </div>
+                    <div class="flex call-mg">
+                        <img class="icon--header" src="./assets/imagens/icons/icon-calendar.png">
+                        <ul class="box">
+                            <li class="li-bold">Data e Hora</li>
+                            <li>04 de Maio 2019</li>
+                            <li>De 9h às 20h30</li>
+                        </ul>
+                    </div>
+                    <div class="flex call-mg">
+                        <img class="icon--header" src="./assets/imagens/icons/icon-microphone.png">
+                        <ul class="box">
+                            <li class="li-bold">Palestrantes</li>
+                            <li>13 profissionais</li>
+    
+                        </ul>
+                    </div>
+                    <div class="flex call-mg">
+                        <img class="icon--header" src="./assets/imagens/icons/icon-people.png">
+                        <ul class="box">
+                            <li class="li-bold">Participantes</li>
+                            <li>300 mulheres</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    
     <main>
         <!--Seção do Moisaico-->
-    <section class="container__sobre">
-        <div class="container__conteudo">
-            
-                <img src="./assets/imagens/img_mosaico.JPG" alt="Foto do evento Mulheres de Produto Day" class="container__conteudo--imagem">
-            
-            <div class="container__conteudo--artigo">
-                <div class="container__conteudo--texto">
-                    <div class="container__borda">
-                        <h2>Maior comunidade de produto do Brasil</h2>
-                        <span class="borda"></span>
-                    </div>
-                    <div>
-                        <p>Somos uma comunidade de mulheres em Tecnologia e queremos criar um ambiente seguro para que todas
-                        possam disseminar conhecimento, falar sobre os desafios sem medo, sem julgamentos. Para nos
-                        empoderarmos.</p>
-                    </div>
-                </div>
-                <ul>
-                    <li><img class="icones" src="./assets/imagens/medium.png" alt="ícone para o Medium"></li>
-                    <li><img class="icones" src="./assets/imagens/slack.png" alt="ícone para o Slack"></li>
-                    <li><img class="icones" src="./assets/imagens/instagram.png" alt="ícone para o Instagram"></li>
-                    <li><img class="icones" src="./assets/imagens/facebook.png" alt="ícone para o Facebook"></li>
-                    <li><img class="icones" src="./assets/imagens/linkedin.png" alt="ícone para o Linkedin"></li>
-                    <li><img class="icones" src="./assets/imagens/meetup.png" alt="ícone para o Meetup"></li>
-                </ul>
-            </div>
-        </div>
+        <section class="container__sobre">
+            <div class="container__conteudo">
 
+                <img src="./assets/imagens/img_mosaico.JPG" alt="Foto do evento Mulheres de Produto Day"
+                    class="container__conteudo--imagem">
 
-
-        <div class="container__conteudo">
-            <div class="container__conteudo--artigo">
-                <div class="container__conteudo--texto">
-                    <div class="container__borda">
-                        <h2>O que vai ser o MDP Day?</h2>
-                        <span class="borda"></span>
+                <div class="container__conteudo--artigo">
+                    <div class="container__conteudo--texto">
+                        <div class="container__borda">
+                            <h2>Maior comunidade de produto do Brasil</h2>
+                            <span class="borda"></span>
+                        </div>
+                        <div>
+                            <p>Somos uma comunidade de mulheres em Tecnologia e queremos criar um ambiente seguro para
+                                que todas
+                                possam disseminar conhecimento, falar sobre os desafios sem medo, sem julgamentos. Para
+                                nos
+                                empoderarmos.</p>
+                        </div>
                     </div>
-                    <div>
-                        <p>Vai ser um evento com uma programação intensa para pessoas que se identificam como mulheres: interessadas ou que atuam em uma carreira em tecnologia. Não é preciso fazer parte da comunidade para participar, mas se quiser, pode. =P</p>
-                    </div>
+                    <ul>
+                        <li><img class="icones" src="./assets/imagens/medium.png" alt="ícone para o Medium"></li>
+                        <li><img class="icones" src="./assets/imagens/slack.png" alt="ícone para o Slack"></li>
+                        <li><img class="icones" src="./assets/imagens/instagram.png" alt="ícone para o Instagram"></li>
+                        <li><img class="icones" src="./assets/imagens/facebook.png" alt="ícone para o Facebook"></li>
+                        <li><img class="icones" src="./assets/imagens/linkedin.png" alt="ícone para o Linkedin"></li>
+                        <li><img class="icones" src="./assets/imagens/meetup.png" alt="ícone para o Meetup"></li>
+                        <li><img class="icones" src="./assets/imagens/twitter.png" alt="ícone para o Twitter"></li>
+                        <li><img class="icones" src="./assets/imagens/youtube.png" alt="ícone para o Youtube"></li>
+                    </ul>
                 </div>
             </div>
-            
-                <img src="./assets/imagens/img_mosaico.JPG" alt="Foto do evento Mulheres de Produto Day"
-                class="container__conteudo--imagem">
-            
-        </div>
-        
-        
-        <div class="container__conteudo">
-            
-                <img src="./assets/imagens/img_mosaico.JPG" alt="Foto do evento Mulheres de Produto Day"
-                class="container__conteudo--imagem">
-            
 
-            <div class="container__conteudo--artigo">
-                <div class="container__conteudo--texto">
-                    <div class="container__borda">
-                        <h2>Últimas Edições</h2>
-                        <span class="borda"></span>
+
+
+            <div class="container__conteudo">
+                <div class="container__conteudo--artigo">
+                    <div class="container__conteudo--texto">
+                        <div class="container__borda">
+                            <h2>O que vai ser o MDP Day?</h2>
+                            <span class="borda"></span>
+                        </div>
+                        <div>
+                            <p>Vai ser um evento com uma programação intensa para pessoas que se identificam como
+                                mulheres: interessadas ou que atuam em uma carreira em tecnologia. Não é preciso fazer
+                                parte da comunidade para participar, mas se quiser, pode. =P</p>
+                        </div>
                     </div>
-                    <div>
-                        <p>Tivemos 2 espaços com diversas atividades: Keynote, palestras, Lightining talks, Dinâmicas, Rodas de discussão, Sessões de mentoria, massagens e muito mais! Diversas oportunidades para networking e recrutamento.</p>
-                    </div>
-                    <button class="container__conteudo--btn"><a href="https://photos.app.goo.gl/b6GCdfo5V22g6oiMA"
-                        target="_blank">Veja as
-                        fotos</a>
-                    </button>
+                </div>
+
+                <img src="./assets/imagens/img_mosaico.JPG" alt="Foto do evento Mulheres de Produto Day"
+                    class="container__conteudo--imagem">
+
             </div>
-        </div>
 
-    </section>
+
+            <div class="container__conteudo">
+
+                <img src="./assets/imagens/img_mosaico.JPG" alt="Foto do evento Mulheres de Produto Day"
+                    class="container__conteudo--imagem">
+
+
+                <div class="container__conteudo--artigo">
+                    <div class="container__conteudo--texto">
+                        <div class="container__borda">
+                            <h2>Últimas Edições</h2>
+                            <span class="borda"></span>
+                        </div>
+                        <div>
+                            <p>Tivemos 2 espaços com diversas atividades: Keynote, palestras, Lightining talks,
+                                Dinâmicas, Rodas de discussão, Sessões de mentoria, massagens e muito mais! Diversas
+                                oportunidades para networking e recrutamento.</p>
+                        </div>
+                        <button class="container__conteudo--btn"><a href="https://photos.app.goo.gl/b6GCdfo5V22g6oiMA"
+                                target="_blank">Veja as
+                                fotos</a>
+                        </button>
+                    </div>
+                </div>
+        </section>
+
+        <!--Seção dos Cards dos palestrantes-->
+        <section>
+
+        </section>
+
+        <!--Seção da Agenda do evento-->
+        <section>
+            <div class="container__agenda">
+                <h2>Agenda</h2>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td class="container__horario">8:00 - 9:00</td>
+                        <td><span class="destaque__agenda">Credenciamento</span></td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td class="container__horario">9:00 - 10:00</td>
+                        <td>Networking</td>
+                    <tr>
+                        <td></td>
+                        <td>Jacqueline Yumi Asano, Nubank</td>
+                    </tr>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td class="container__horario">10:00 - 11:00</td>
+                        <td>Palestra</td>
+                    <tr>
+                        <td></td>
+                        <td>Jacqueline Yumi Asano, Nubank</td>
+                    </tr>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td class="container__horario">11:00 - 12:00</td>
+                        <td>Keynote</td>
+                    <tr>
+                        <td></td>
+                        <td>Jacqueline Yumi Asano, Nubank</td>
+                    </tr>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td class="container__horario">12:00 - 13:00</td>
+                        <td><span class="destaque__agenda">Almoço</span></td>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td class="container__horario">14:00 - 15:00</td>
+                        <td>Keynote: Mulheres de produto, meus erros e aprendizados</td>
+                    <tr>
+                        <td></td>
+                        <td>Jacqueline Yumi Asano, Nubank</td>
+                    </tr>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td class="container__horario">16:00 - 17:00</td>
+                        <td>Keynote: Mulheres de produto, meus erros e aprendizados</td>
+                    <tr>
+                        <td></td>
+                        <td>Jacqueline Yumi Asano, Nubank</td>
+                    </tr>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td class="container__horario">17:00 - 18:00</td>
+                        <td>Keynote: Mulheres de produto, meus erros e aprendizados</td>
+                    <tr>
+                        <td></td>
+                        <td>Jacqueline Yumi Asano, Nubank</td>
+                    </tr>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td class="container__horario">18:00 - 19:00</td>
+                        <td><span class="destaque__agenda">Encerramento</span></td>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+        <!--Seção do Local-->
+        <section>
+
+        </section>
+        <!--Seção dos Patrocinadores-->
+        <section>
+
+        </section>
+        <!--Seção do contato-->
+        <section>
+
+        </section>
+        <div>
+
+        </div>
+        <footer>
+            <div>
+                <div class="footer__bg">
+
+                    <div>
+                        <img src="./assets/imagens/logo_mdp.png" alt="logo mulheres de produto"
+                            title="logo mulheres de produto" class="logo--footer">
+                    </div>
+                    <ul>
+                        <li><img class="icones--footer" src="./assets/imagens/medium.png" alt="ícone para o Medium"></li>
+                        <li><img class="icones--footer" src="./assets/imagens/slack.png" alt="ícone para o Slack"></li>
+                        <li><img class="icones--footer" src="./assets/imagens/instagram.png" alt="ícone para o Instagram"></li>
+                        <li><img class="icones--footer" src="./assets/imagens/facebook.png" alt="ícone para o Facebook"></li>
+                        <li><img class="icones--footer" src="./assets/imagens/linkedin.png" alt="ícone para o Linkedin"></li>
+                        <li><img class="icones--footer" src="./assets/imagens/meetup.png" alt="ícone para o Meetup"></li>
+                        <li><img class="icones--footer" src="./assets/imagens/twitter.png" alt="ícone para o Twitter"></li>
+                        <li><img class="icones--footer" src="./assets/imagens/youtube.png" alt="ícone para o Youtube"></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer__menor">
+                <p>Mulheres de Produto © 2019. Desenvolvido pelas alunas da <span class="footer__reprograma">{Reprograma}</span></p>
+            </div>
+        </footer>
+
     </main>
 
     <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
