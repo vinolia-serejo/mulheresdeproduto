@@ -12,7 +12,9 @@ h2{
     background-color: $cor-fundo-roxo;
     padding-bottom: 5%; 
 }
-
+.vejaMais{
+    display: none;
+}
 .cards{
     @include flex(center, center);
     flex-wrap: wrap;
@@ -90,4 +92,36 @@ h2{
         color: $cor-btn;
         font-size: $fonte-padrao;
     }
+}
+@media(max-width: 420px){
+    .palestrantes{
+        background-color: $cor-fundo-cinza;
+    }
+    .row_cards{
+        @include flex(center, center);
+        
+    }
+
+#mobile-cards{
+        display: none;
+    }
+    
+    .card{
+        width: 40%;
+    }
+    .icone_linkedin{
+        width: 100px;
+        height: 115px;
+    }
+#h2-mobile{
+        color: $cor-fonte-roxo;
+    }
+    .veja-mais{
+        display: block;
+        text-transform: uppercase;
+        color: $cor-fonte-roxo;
+        font-weight: 600;
+    }
+
+    
 }

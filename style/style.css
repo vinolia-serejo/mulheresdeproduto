@@ -632,6 +632,10 @@ h2 {
   padding-bottom: 5%;
 }
 
+.vejaMais {
+  display: none;
+}
+
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -738,6 +742,42 @@ h2 {
   padding-left: 10px;
   color: #f7425a;
   font-size: 16px;
+}
+
+@media (max-width: 420px) {
+  .palestrantes {
+    background-color: #F0F0F0;
+  }
+  .row_cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mobile-cards {
+    display: none;
+  }
+  .card {
+    width: 40%;
+  }
+  .icone_linkedin {
+    width: 100px;
+    height: 115px;
+  }
+  #h2-mobile {
+    color: #990c6e;
+  }
+  .veja-mais {
+    display: block;
+    text-transform: uppercase;
+    color: #990c6e;
+    font-weight: 600;
+  }
 }
 
 .patrons {

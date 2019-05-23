@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+  // $('img').attr('draggable', 'false');
+
   $('.m-menu').hide();
 
     
@@ -27,6 +29,9 @@ $(document).ready(function () {
       $('nav').toggleClass('nav--bg');
     }
   })
-
+  
+  $('.veja-mais').click(function(){
+    $('#mobile-cards').slideToggle();
+  })
 
 });
