@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
@@ -181,6 +185,10 @@ a:hover {
   background-repeat: no-repeat;
   min-height: 80vh;
   height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .flex--header {
@@ -665,6 +673,231 @@ ul li {
     margin-left: 0;
     margin-top: 5px;
   }
+}
+
+.background {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 0, 255, 0.322))), url("../assets/imagens/nubank.jpg");
+  background-image: linear-gradient(rgba(217, 0, 255, 0.322)), url("../assets/imagens/nubank.jpg");
+  background-position: cover;
+  height: 124vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.flex-linha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.linha {
+  border-top: 1px solid #fff;
+  width: 93px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.logo {
+  height: 164px;
+  padding: 2%;
+  text-align: center;
+}
+
+.logo_img {
+  margin-top: 5%;
+  width: 280px;
+}
+
+.endereco_texto {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.textos {
+  width: 50%;
+  background-color: #792b77;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#local {
+  margin-top: 5%;
+}
+
+.endereco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  max-width: 60%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  padding-bottom: 5%;
+}
+
+.mapa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.caixa_mapa {
+  margin-top: 5%;
+  width: 447px;
+  height: 300px;
+}
+
+h2 {
+  padding: 5%;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #fff;
+}
+
+.palestrantes {
+  background-color: #792b77;
+  padding-bottom: 5%;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+}
+
+.over {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.over:hover .icone_linkedin {
+  opacity: 1;
+}
+
+.over:hover {
+  opacity: 1;
+}
+
+.icone_linkedin {
+  font-size: 16px;
+  position: absolute;
+  opacity: 1;
+  display: block;
+  width: 216px;
+  height: 230px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 20%;
+  margin: 5% 2.5% 0% 2.5%;
+  height: 300px;
+  -webkit-box-shadow: 7px 6px 18px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 7px 6px 18px -5px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.card .texto__card {
+  background-color: white;
+  width: 100%;
+}
+
+.card .imagem__card > img {
+  position: relative;
+  width: 100%;
+}
+
+.card p {
+  margin: 5px 0px 10px 0px;
+  padding-left: 10px;
+}
+
+.card h6 {
+  margin: 10px 0px 0px 0px;
+  padding-left: 10px;
+  color: #f7425a;
+  font-size: 18px;
 }
 
 * {

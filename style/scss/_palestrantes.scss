@@ -1,0 +1,93 @@
+
+h2{
+    padding: 5%;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase; 
+    font-size: 50px;
+    color: $cor-branca; 
+}
+
+.palestrantes{
+    background-color: $cor-fundo-roxo;
+    padding-bottom: 5%; 
+}
+
+.cards{
+    @include flex(center, center);
+    flex-wrap: wrap;
+}
+
+.row_cards{
+    @include flex(center, space-between);
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+
+.over{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top:0;
+    //left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+    &:hover .icone_linkedin{
+        opacity: 1;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.icone_linkedin{
+    font-size: 16px;
+    //padding: 16px 32px;
+    position: absolute; 
+    opacity: 1;
+    display: block;
+    width: 216px;
+    height: 230px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+
+.card{
+    @include flex(center, flex-end);
+    flex-flow: column wrap;
+    width: 20%;
+    margin: 5% 2.5% 0% 2.5%;
+    height: 300px;
+    -webkit-box-shadow: 7px 6px 18px -5px rgba(0,0,0,0.4);
+    -moz-box-shadow: 7px 6px 18px -5px rgba(0,0,0,0.4);
+    box-shadow: 7px 6px 18px -5px rgba(0,0,0,0.4);
+    position: relative;
+    //width: 50%;
+    .texto__card{
+        background-color: white;
+        width: 100%
+    }
+
+    .imagem__card > img {
+        position: relative;
+        width:100%;
+       
+    }
+
+    p{ 
+        margin: 5px 0px 10px 0px;
+        padding-left: 10px
+    }
+
+    h6 {
+        margin: 10px 0px 0px 0px;
+        padding-left: 10px;
+        color: $cor-btn;
+        font-size: $fonte-padrao;
+    }
+}
