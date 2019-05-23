@@ -109,7 +109,7 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .menu li {
     font-size: 14px;
   }
@@ -279,6 +279,18 @@ a:hover {
   width: 50px;
 }
 
+@media (max-width: 1200px) {
+  .header--titulo {
+    font-size: 100px;
+  }
+  .header--subtitulo {
+    font-size: 16px;
+  }
+  .line-subtitle {
+    width: 40px;
+  }
+}
+
 @media (max-width: 800px) {
   .header--bg {
     min-height: 40vh;
@@ -287,12 +299,6 @@ a:hover {
   }
   .header--titulo {
     font-size: 80px;
-  }
-  .header--subtitulo {
-    font-size: 16px;
-  }
-  .line-subtitle {
-    width: 40px;
   }
   .btn--header {
     font-size: 20px;
