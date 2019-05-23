@@ -39,11 +39,11 @@
 }
 
 .flex-row {
-    @include flex(center, space-around);
+    @include flex(center, center);
 }
 
 .flex-patron {
-    @include flex(center, space-around);
+    @include flex(center, center);
     flex-direction: row;;
     margin: 15px;
 }
