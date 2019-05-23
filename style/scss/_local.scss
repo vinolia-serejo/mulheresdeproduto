@@ -1,5 +1,4 @@
 .background{
-    // background-image: linear-gradient(rgba(93, 32, 143, 0), rgba(140, 0, 255, 0)), url("../assets/imagens/nubank.jpg");
     background-image: linear-gradient( rgba(217, 0, 255, 0.322)), url("../assets/imagens/nubank.jpg");
     background-position:cover;
     height: 124vh;
@@ -7,9 +6,10 @@
     display: flex;
     justify-content: flex-end;
     background-attachment: fixed;
-    background-repeat:  repeat;
+    background-repeat: repeat;
     background-size: contain;
 }
+
 .flex-linha{
     @include flex(flex-start, space-between)
     
