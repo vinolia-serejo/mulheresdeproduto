@@ -22,8 +22,8 @@ button{
     margin: 0 auto;
 }
 
-ul{
-    padding-left: 0
+.redes-socias {
+    @include flex(center, space-between);
 }
 
 li{

@@ -63,12 +63,10 @@ width: 65%;
     width: 150px;
 }
 
-ul {
-    @include flex("center", "center");
-    justify-content: center;
-    & li {
-        margin-right: 3%; 
-    }
+.redes-sociais {
+    @include flex(center, space-between);
+    // flex-direction: row;
+    
 }
 
 //Breakpoint

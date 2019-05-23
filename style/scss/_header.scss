@@ -62,11 +62,6 @@
 }
 .flex{
     @include flex(center, center);
-
-    // .flex ul {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
 }
 
 .box {
@@ -117,7 +112,8 @@
     .box {
         font-size: 12px;
         width: 70%;
-
+        display: flex;
+        flex-direction: column;
     }
 
     .icon--header {
