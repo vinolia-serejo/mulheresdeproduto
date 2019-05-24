@@ -983,6 +983,7 @@ h2 {
 @media (max-width: 420px) {
   h2 {
     font-size: 25px;
+    padding-bottom: 18px;
   }
   .palestrantes {
     background-color: #F0F0F0;
