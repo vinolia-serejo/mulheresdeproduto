@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $cor-principal;
+    margin: 0 auto;
+    // background-color: $cor-principal;
     // margin: 0 auto; 
 
     .logo--footer{
@@ -33,15 +34,19 @@
 }
 
 .footer__menor { 
+    width: 100%;
     padding: 10px;
     color: $cor-fundo-cinza;
+    background-color: $cor-rodape;
+    text-align: center;
 }
 
 footer {
     text-align: center;
     color: $cor-branca;
     font-size: $fonte-rodape;
-    background-color: $cor-rodape;
+    background-color: $cor-principal;
+    // background-color: $cor-rodape;
 }
 
 .footer__reprograma {
@@ -50,4 +55,15 @@ footer {
 
 .icones--footer {
     width: 25px;
+}
+
+@media (max-width: 350px) {
+
+    .icones--footer {
+        width: 18px;
+    }
+
+    .footer__bg ul {
+        width: 60%;
+    }
 }
