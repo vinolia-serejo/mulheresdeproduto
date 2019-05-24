@@ -32,8 +32,16 @@ $(document).ready(function () {
     $('.m-menu').slideUp('slow');
   })
 
+  // VEJA MAIS 
   
+  $.fn.extend({
+    toggleText: function(a, b){
+        return this.text(this.text() == b ? a : b);
+    }
+  });
+
   $('.veja-mais').click(function () {
+    $(this).toggleText('Veja Mais', 'Veja Menos');
     $('.hide-cards').slideToggle();
   })
 

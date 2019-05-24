@@ -472,6 +472,8 @@ a:hover {
   font-weight: bold;
   text-transform: uppercase;
   margin-right: 7%;
+  padding: 0;
+  text-align: left;
 }
 
 .icones {
@@ -493,9 +495,25 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 16px;
 }
 
 @media (max-width: 420px) {
+  .container__conteudo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container__conteudo--imagem {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
   .container__conteudo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -544,6 +562,9 @@ table tr:first-child {
 }
 
 @media (max-width: 420px) {
+  .container__agenda h2 {
+    font-size: 25px;
+  }
   .container__horario {
     width: 40%;
   }
@@ -825,7 +846,7 @@ table tr:first-child {
 }
 
 h2 {
-  padding: 5%;
+  padding-top: 5%;
   text-align: center;
   margin: 0;
   text-transform: uppercase;
@@ -869,8 +890,15 @@ h2 {
   width: 100%;
 }
 
-.over {
+.veja-mais {
   display: none;
+}
+
+.hide-cards {
+  display: inline-block;
+}
+
+.over {
   -webkit-transition: .5s ease;
   transition: .5s ease;
   opacity: 0;
@@ -891,17 +919,17 @@ h2 {
 }
 
 .icone_linkedin {
-  display: none;
   font-size: 16px;
   position: absolute;
   opacity: 1;
   display: block;
-  width: 216px;
+  max-width: 216px;
   height: 230px;
   -webkit-transition: .5s ease;
   transition: .5s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  width: 100%;
 }
 
 .card {
@@ -920,15 +948,19 @@ h2 {
           flex-flow: column wrap;
   width: 20%;
   margin: 5% 2.5% 0% 2.5%;
-  height: 300px;
   -webkit-box-shadow: 7px 6px 18px -5px rgba(0, 0, 0, 0.4);
   box-shadow: 7px 6px 18px -5px rgba(0, 0, 0, 0.4);
   position: relative;
+  max-height: 100%;
 }
 
 .card .texto__card {
   background-color: white;
   width: 100%;
+}
+
+.card .imagem__card {
+  background-color: transparent;
 }
 
 .card .imagem__card > img {
@@ -946,6 +978,50 @@ h2 {
   padding-left: 10px;
   color: #f7425a;
   font-size: 16px;
+}
+
+@media (max-width: 420px) {
+  h2 {
+    font-size: 25px;
+  }
+  .palestrantes {
+    background-color: #F0F0F0;
+  }
+  .row_cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card {
+    width: 40%;
+  }
+  .icone_linkedin {
+    width: 100%;
+    max-width: 216px;
+    display: none;
+  }
+  #h2-mobile {
+    color: #990c6e;
+  }
+  .veja-mais {
+    display: block;
+    text-transform: uppercase;
+    color: #990c6e;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+  .hide-cards {
+    display: none;
+  }
+  .over {
+    display: none;
+  }
 }
 
 .patrons {
@@ -1186,6 +1262,18 @@ h2 {
 .footer__bg ul {
   width: 38%;
   margin: 25px auto;
+}
+
+.footer__bg .redes-sociais-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 420px) {

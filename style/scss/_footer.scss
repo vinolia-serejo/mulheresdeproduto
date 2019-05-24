@@ -23,6 +23,12 @@
 
     }
 
+
+    .redes-sociais-footer {
+        @include flex(center, space-between);
+        
+    }
+
 }
 
 @media (max-width: $mobile) {
