@@ -1,9 +1,7 @@
 table {
     background-color: $cor-fundo-cinza;
     width: 60%;
-    
-    
-    margin: 0.5% auto;
+    margin: 1.2% auto;
 
     tr {
         height: 30px;
@@ -37,8 +35,17 @@ table {
 }
 
 @media (max-width: $mobile) {
+
     .container__horario {
-        width: 20%;
+        width: 40%;
     }
     
 }
+
+@media (max-width: 780px) {
+    table {
+        width: 80%;
+    }
+    
+}
+

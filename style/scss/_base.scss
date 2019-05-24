@@ -5,6 +5,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 body{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: $fonte-padrao;
@@ -20,6 +21,7 @@ button{
 .container{
     width: 80%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .redes-socias {
@@ -48,4 +50,15 @@ a{
     body {
         font-size: $fonte-padrao-mobile;
     }
+}
+
+@media (min-width: 2000px){
+    body {
+        font-size: $fonte-padrao-large
+    }
+    
+    .container {
+        max-width: 1800px;
+    }
+
 }
