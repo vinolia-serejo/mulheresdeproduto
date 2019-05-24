@@ -486,7 +486,7 @@ a:hover {
 
 table {
   background-color: #F0F0F0;
-  width: 60%;
+  width: 90%;
   margin: 0.5% auto;
 }
 
@@ -626,7 +626,7 @@ table tr:first-child {
   height: 300px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 420px) {
   .background {
     background-color: #792b77;
     display: -webkit-box;
@@ -659,7 +659,7 @@ table tr:first-child {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 600px) {
   .background {
     background-color: #792b77;
     display: -webkit-box;
@@ -725,7 +725,7 @@ table tr:first-child {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .background {
     background-color: #792b77;
     display: -webkit-box;
