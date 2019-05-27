@@ -16,8 +16,8 @@
     <nav class="nav">
         <div class="container flex--nav">
             <div class="flex--nav container--menu">
-                <img src="./assets/imagens/logo_mdp.png" alt="logo mulheres de produto" title="logo mulheres de produto"
-                    class="logo--nav">
+                <a href="#home" id="link_logo" class="active"><img src="./assets/imagens/logo_mdp.png"
+                        alt="logo mulheres de produto" title="logo mulheres de produto" class="logo--nav"></a>
                 <ul class="flex--nav menu">
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#palestrantes">Palestrantes</a></li>
@@ -46,7 +46,7 @@
     </nav>
 
     <!-- HEADER -->
-    <header class="header--bg">
+    <header class="header--bg section" id="home">
         <div class="container flex--header">
             <h1 class="header--titulo">MPDAY-2020</h1>
             <div class="subtitle-container flex">
@@ -60,50 +60,50 @@
 
     <!-- CHAMADA -->
     <section>
-            <div class="call">
-                <div class="container flex--container">
-                    <div class="flex call-mg">
-                        <img class="icon--header" src="./assets/imagens/icons/icon-place.png">
-                        <ul class="box">
-                            <li class="li-bold">Localização</li>
-                            <li>Nubank</li>
-                            <li>São Paulo - SP</li>
-                        </ul>
-                    </div>
-                    <div class="flex call-mg">
-                        <img class="icon--header" src="./assets/imagens/icons/icon-calendar.png">
-                        <ul class="box">
-                            <li class="li-bold">Data e Hora</li>
-                            <li>04 de Maio 2019</li>
-                            <li>De 9h às 20h30</li>
-                        </ul>
-                    </div>
-                    <div class="flex call-mg">
-                        <img class="icon--header" src="./assets/imagens/icons/icon-microphone.png">
-                        <ul class="box">
-                            <li class="li-bold">Palestrantes</li>
-                            <li>13 profissionais</li>
-    
-                        </ul>
-                    </div>
-                    <div class="flex call-mg">
-                        <img class="icon--header" src="./assets/imagens/icons/icon-people.png">
-                        <ul class="box">
-                            <li class="li-bold">Participantes</li>
-                            <li>300 mulheres</li>
-                        </ul>
-                    </div>
+        <div class="call">
+            <div class="container flex--container">
+                <div class="flex call-mg">
+                    <img class="icon--header" src="./assets/imagens/icons/icon-place.png">
+                    <ul class="box">
+                        <li class="li-bold">Localização</li>
+                        <li>Nubank</li>
+                        <li>São Paulo - SP</li>
+                    </ul>
+                </div>
+                <div class="flex call-mg">
+                    <img class="icon--header" src="./assets/imagens/icons/icon-calendar.png">
+                    <ul class="box">
+                        <li class="li-bold">Data e Hora</li>
+                        <li>04 de Maio 2019</li>
+                        <li>De 9h às 20h30</li>
+                    </ul>
+                </div>
+                <div class="flex call-mg">
+                    <img class="icon--header" src="./assets/imagens/icons/icon-microphone.png">
+                    <ul class="box">
+                        <li class="li-bold">Palestrantes</li>
+                        <li>13 profissionais</li>
+
+                    </ul>
+                </div>
+                <div class="flex call-mg">
+                    <img class="icon--header" src="./assets/imagens/icons/icon-people.png">
+                    <ul class="box">
+                        <li class="li-bold">Participantes</li>
+                        <li>300 mulheres</li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <!-- MOSAICO -->
-    <section class="container__sobre">
+    <section class="container__sobre section" id="sobre">
         <div class="container__conteudo">
-    
-            <img src="./assets/imagens/img_mosaico.JPG" alt="Foto do evento Mulheres de Produto Day"
+
+            <img src="./assets/imagens/img_mosaico.jpg" alt="Foto do evento Mulheres de Produto Day"
                 class="container__conteudo--imagem">
-    
+
             <div class="container__conteudo--artigo">
                 <div class="container__conteudo--texto">
                     <div class="container__borda">
@@ -118,17 +118,33 @@
                             empoderarmos.</p>
                     </div>
                 </div>
-                <ul>
-                    <li><img class="icones" src="./assets/imagens/medium.png" alt="ícone para o Medium"></li>
-                    <li><img class="icones" src="./assets/imagens/slack.png" alt="ícone para o Slack"></li>
-                    <li><img class="icones" src="./assets/imagens/instagram.png" alt="ícone para o Instagram"></li>
-                    <li><img class="icones" src="./assets/imagens/facebook.png" alt="ícone para o Facebook"></li>
-                    <li><img class="icones" src="./assets/imagens/linkedin.png" alt="ícone para o Linkedin"></li>
-                    <li><img class="icones" src="./assets/imagens/meetup.png" alt="ícone para o Meetup"></li>
+                <ul class="redes-sociais">
+                    <a href="https://medium.com/mulheres-de-produto">
+                        <li class="icones-mosaico"><img class="icones" src="./assets/imagens/medium.png"
+                                alt="ícone para o Medium"></li>
+                    </a>
+
+
+                    <a href="https://www.instagram.com/mulheresdeproduto/">
+                        <li class="icones-mosaico"><img class="icones" src="./assets/imagens/instagram.png"
+                                alt="ícone para o Instagram"></li>
+                    </a>
+                    <a href="https://www.facebook.com/mulheresdeproduto/">
+                        <li class="icones-mosaico"><img class="icones" src="./assets/imagens/facebook.png"
+                                alt="ícone para o Facebook"></li>
+                    </a>
+                    <a href="https://www.linkedin.com/company/mulheres-de-produto/?originalSubdomain=pt">
+                        <li class="icones-mosaico"><img class="icones" src="./assets/imagens/linkedin.png"
+                                alt="ícone para o Linkedin"></li>
+                    </a>
+                    <a href="https://www.meetup.com/pt-BR/Mulheres-de-Produto/">
+                        <li class="icones-mosaico"><img class="icones" src="./assets/imagens/meetup.png"
+                                alt="ícone para o Meetup"></li>
+                    </a>
                 </ul>
             </div>
         </div>
-    
+
         <div class="container__conteudo">
             <div class="container__conteudo--artigo">
                 <div class="container__conteudo--texto">
@@ -143,19 +159,19 @@
                     </div>
                 </div>
             </div>
-    
-            <img src="./assets/imagens/img_mosaico.JPG" alt="Foto do evento Mulheres de Produto Day"
+
+            <img src="./assets/imagens/img_mosaico.jpg" alt="Foto do evento Mulheres de Produto Day"
                 class="container__conteudo--imagem">
-    
+
         </div>
-    
-    
+
+
         <div class="container__conteudo">
-    
-            <img src="./assets/imagens/img_mosaico.JPG" alt="Foto do evento Mulheres de Produto Day"
+
+            <img src="./assets/imagens/img_mosaico.jpg" alt="Foto do evento Mulheres de Produto Day"
                 class="container__conteudo--imagem">
-    
-    
+
+
             <div class="container__conteudo--artigo">
                 <div class="container__conteudo--texto">
                     <div class="container__borda">
@@ -171,118 +187,122 @@
                             target="_blank">Veja as
                             fotos</a>
                     </button>
+                </div>
             </div>
-        </div>
-    
+
     </section>
 
     <!-- PALESTRANTES -->
-    <section class="palestrantes" id="palestrantes">
-        <div class="container">
-            <h2 id="h2-mobile">Palestrantes</h2>
-            <div class="cards">
-                <div class="row_cards">
-                    <div class="card" id="card1">
-                        <!-- <div class="over"><img class="icone_linkedin" src="./assets/imagens/icons/download.png"></div> -->
-                        <div class="imagem__card">
-                            <img src="./assets/imagens/WhatsApp Image 2019-05-22 at 11.14.18.jpeg">
-                            <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
-                                        src="./assets/imagens/icons/linkedin.png"></a></div>
+    <section class="palestrantes section" id="palestrantes">
+        <section class="palestrantes" id="palestrantes">
+            <div class="container">
+                <h2 id="h2-mobile">Palestrantes</h2>
+                <div class="cards">
+                    <div class="row_cards">
+                        <div class="card" id="card1">
+                            <!-- <div class="over"><img class="icone_linkedin" src="./assets/imagens/icons/download.png"></div> -->
+                            <div class="imagem__card">
+                                <img src="./assets/imagens/perfil_palestrantes.jpg">
+                                <!-- <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
+                                            src="./assets/imagens/icons/linkedin.png"></a></div> -->
+                            </div>
+                            <div class="texto__card">
+                                <h6>NOME</h6>
+                                <p>Cargo, Empresa</p>
+                            </div>
                         </div>
-                        <div class="texto__card">
-                            <h6>Mariana Graf</h6>
-                            <p>Agile Coach, Pagseguro</p>
+                        <div class="card">
+                            <div class="imagem__card">
+                                <img src="./assets/imagens/perfil_palestrantes.jpg">
+                                <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
+                                            src="./assets/imagens/icons/linkedin.png"></a></div>
+                            </div>
+                            <div class="texto__card">
+                                <h6>NOME</h6>
+                                <p>Cargo, Empresa</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="imagem__card">
-                            <img src="./assets/imagens/WhatsApp Image 2019-05-22 at 11.14.18.jpeg">
-                            <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
-                                        src="./assets/imagens/icons/linkedin.png"></a></div>
+                        <div class="card">
+                            <div class="imagem__card">
+                                <img class="imagem" src="./assets/imagens/perfil_palestrantes.jpg">
+                                <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
+                                            src="./assets/imagens/icons/linkedin.png"></a></div>
+                            </div>
+                            <div class="texto__card">
+                                <h6>NOME</h6>
+                                <p>Cargo, Empresa</p>
+                            </div>
                         </div>
-                        <div class="texto__card">
-                            <h6>Mariana Graf</h6>
-                            <p>Agile Coach, Pagseguro</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="imagem__card">
-                            <img class="imagem" src="./assets/imagens/WhatsApp Image 2019-05-22 at 11.14.18.jpeg">
-                            <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
-                                        src="./assets/imagens/icons/linkedin.png"></a></div>
-                        </div>
-                        <div class="texto__card">
-                            <h6>Mariana Graf</h6>
-                            <p>Agile Coach, Pagseguro</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="imagem__card">
-                            <img src="./assets/imagens/WhatsApp Image 2019-05-22 at 11.14.18.jpeg">
-                            <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
-                                        src="./assets/imagens/icons/linkedin.png"></a></div>
-                        </div>
-                        <div class="texto__card">
-                            <h6>Mariana Graf</h6>
-                            <p>Agile Coach, Pagseguro</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <a class="veja-mais">Veja Mais</a>
-                </div>
-                <div class="row_cards" id="mobile-cards">
-                    <div class="card">
-                        <div class="imagem__card">
-                            <img src="./assets/imagens/WhatsApp Image 2019-05-22 at 11.14.18.jpeg">
-                            <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
-                                        src="./assets/imagens/icons/linkedin.png"></a></div>
-                        </div>
-                        <div class="texto__card">
-                            <h6>Mariana Graf</h6>
-                            <p>Agile Coach, Pagseguro</p>
+                        <div class="card">
+                            <div class="imagem__card">
+                                <img src="./assets/imagens/perfil_palestrantes.jpg">
+                                <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
+                                            src="./assets/imagens/icons/linkedin.png"></a></div>
+                            </div>
+                            <div class="texto__card">
+                                <h6>NOME</h6>
+                                <p>Cargo, Empresa</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="imagem__card">
-                            <img src="./assets/imagens/WhatsApp Image 2019-05-22 at 11.14.18.jpeg">
-                            <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
-                                        src="./assets/imagens/icons/linkedin.png"></a></div>
-                        </div>
-                        <div class="texto__card">
-                            <h6>Mariana Graf</h6>
-                            <p>Agile Coach, Pagseguro</p>
-                        </div>
+                    <div>
+                        <a class="veja-mais">Veja Mais</a>
                     </div>
-                    <div class="card">
-                        <div class="imagem__card">
-                            <img src="./assets/imagens/WhatsApp Image 2019-05-22 at 11.14.18.jpeg">
-                            <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
-                                        src="./assets/imagens/icons/linkedin.png"></a></div>
-                        </div>
-                        <div class="texto__card">
-                            <h6>Mariana Graf</h6>
-                            <p>Agile Coach, Pagseguro</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="imagem__card">
-                            <img src="./assets/imagens/WhatsApp Image 2019-05-22 at 11.14.18.jpeg">
-                            <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
-                                        src="./assets/imagens/icons/linkedin.png"></a></div>
-                        </div>
-                        <div class="texto__card">
-                            <h6>Mariana Graf</h6>
-                            <p>Agile Coach, Pagseguro</p>
+                    <div class="hide-cards">
+                        <div class="row_cards" id="mobile-cards">
+                            <div class="card">
+                                <div class="imagem__card">
+                                    <img src="./assets/imagens/perfil_palestrantes.jpg">
+                                    <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
+                                                src="./assets/imagens/icons/linkedin.png"></a></div>
+                                </div>
+                                <div class="texto__card">
+                                    <h6>NOME</h6>
+                                    <p>Cargo, Empresa</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="imagem__card">
+                                    <img src="./assets/imagens/perfil_palestrantes.jpg">
+                                    <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
+                                                src="./assets/imagens/icons/linkedin.png"></a></div>
+                                </div>
+                                <div class="texto__card">
+                                    <h6>NOME</h6>
+                                    <p>Cargo, Empresa</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="imagem__card">
+                                    <img src="./assets/imagens/perfil_palestrantes.jpg">
+                                    <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
+                                                src="./assets/imagens/icons/linkedin.png"></a></div>
+                                </div>
+                                <div class="texto__card">
+                                    <h6>NOME</h6>
+                                    <p>Cargo, Empresa</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="imagem__card">
+                                    <img src="./assets/imagens/perfil_palestrantes.jpg">
+                                    <div class="over"><a href="https://br.linkedin.com/"><img class="icone_linkedin"
+                                                src="./assets/imagens/icons/linkedin.png"></a></div>
+                                </div>
+                                <div class="texto__card">
+                                    <h6>NOME</h6>
+                                    <p>Cargo, Empresa</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
 
     <!-- AGENDA -->
-    <section>
+    <section class="section" id="agenda">
         <div class="container__agenda">
             <h2>Agenda</h2>
         </div>
@@ -290,117 +310,122 @@
             <table>
                 <tr>
                     <td class="container__horario">8:00 - 9:00</td>
-                    <td><span class="destaque__agenda">Credenciamento</span></td>
+                    <td><span class="destaque__agenda">Credenciamento / Welcome coffee</span></td>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </tr>
             </table>
-
+    
             <table>
                 <tr>
                     <td class="container__horario">9:00 - 10:00</td>
-                    <td>Networking</td>
-                <tr>
-                    <td></td>
-                    <td>Jacqueline Yumi Asano, Nubank</td>
-                </tr>
+                    <td>Abertura do evento</td>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </tr>
             </table>
-
+    
             <table>
                 <tr>
                     <td class="container__horario">10:00 - 11:00</td>
-                    <td>Palestra</td>
-                <tr>
-                    <td></td>
-                    <td>Jacqueline Yumi Asano, Nubank</td>
-                </tr>
+                    <td>Keynote: Mulheres de Produto. Eu. Meus erros e aprendizados</td>
+                    <tr>
+                        <td></td>
+                        <td>Jacqueline Yumi Asano, Nubank</td>
+                    </tr>
                 </tr>
             </table>
-
+    
             <table>
                 <tr>
                     <td class="container__horario">11:00 - 12:00</td>
-                    <td>Keynote</td>
-                <tr>
-                    <td></td>
-                    <td>Jacqueline Yumi Asano, Nubank</td>
-                </tr>
+                    <td>Gestão emocional em ambientes desafiadores para se manter saudável e produtiva</td>
+                    <tr>
+                        <td></td>
+                        <td>Fernanda Queiroz, DiversiFix</td>
+                    </tr>
                 </tr>
             </table>
-
+    
             <table>
                 <tr>
                     <td class="container__horario">12:00 - 13:00</td>
                     <td><span class="destaque__agenda">Almoço</span></td>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </tr>
             </table>
-
+    
             <table>
                 <tr>
                     <td class="container__horario">14:00 - 15:00</td>
-                    <td>Keynote: Mulheres de produto, meus erros e aprendizados</td>
-                <tr>
-                    <td></td>
-                    <td>Jacqueline Yumi Asano, Nubank</td>
-                </tr>
+                    <td>Surpresa</td>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </tr>
             </table>
-
+    
             <table>
                 <tr>
                     <td class="container__horario">16:00 - 17:00</td>
-                    <td>Keynote: Mulheres de produto, meus erros e aprendizados</td>
-                <tr>
-                    <td></td>
-                    <td>Jacqueline Yumi Asano, Nubank</td>
-                </tr>
+                    <td>Aprendizados na fusão de dois produtos</td>
+                    <tr>
+                        <td></td>
+                        <td>Isabele Cunha, Conta Azul</td>
+                    </tr>
                 </tr>
             </table>
-
+    
             <table>
                 <tr>
                     <td class="container__horario">17:00 - 18:00</td>
-                    <td>Keynote: Mulheres de produto, meus erros e aprendizados</td>
-                <tr>
-                    <td></td>
-                    <td>Jacqueline Yumi Asano, Nubank</td>
-                </tr>
+                    <td>Introdução a Sistemas de Recomendação</td>
+                    <tr>
+                        <td></td>
+                        <td>Betina Costa, Thoughtworks</td>
+                    </tr>
                 </tr>
             </table>
-
+    
             <table>
                 <tr>
                     <td class="container__horario">18:00 - 19:00</td>
                     <td><span class="destaque__agenda">Encerramento</span></td>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </tr>
             </table>
         </div>
-
+    
     </section>
 
     <!-- LOCALIZAÇÃO -->
-    <section class="container background" id="local">
+    <section class="background section" id="local">
         <div class="textos">
             <div class="logo">
-                <img class="logo_img" src="./assets/imagens/logo_nubank.png">
+                <img class="logo_img" src="./assets/imagens/logo_nubank2.png">
             </div>
             <div class="endereco">
                 <div class="flex-linha">
                     <span class="linha"></span>
                     <p class="endereco_texto">RUA CAPOTE VALENTE, 39 - PINHEIROS, SÃO PAULO-BRASIL</p>
                 </div>
-                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam consequuntur ut, cupiditate
-                    vero esse quo quae iure fuga, vel officiis omnis ipsam corporis ipsa reprehenderit </p>
+                <p class="">Nubank é umas das empresa unicórnios brasileira e foi considerada recentemente, a empresa mais inovadora da america latina.
+                    Tem a diversidade como um de seus principais valores.</p>
             </div>
             <div class="mapa">
-                <iframe class="caixa_mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2112380826725!2d-46.67568418538394!3d-23.560855667457933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5781a3cf6571%3A0xf587ab66d7cdfeb5!2sR.+Capote+Valente%2C+39+-+Pinheiros%2C+S%C3%A3o+Paulo+-+SP%2C+05402-000!5e0!3m2!1spt-BR!2sbr!4v1558537120824!5m2!1spt-BR!2sbr"
+                <iframe class="caixa_mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2112380826725!2d-46.67568418538394!3d-23.560855667457933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5781a3cf6571%3A0xf587ab66d7cdfeb5!2sR.+Capote+Valente%2C+39+-+Pinheiros%2C+S%C3%A3o+Paulo+-+SP%2C+05402-000!5e0!3m2!1spt-BR!2sbr!4v1558537120824!5m2!1spt-BR!2sbr"
                     width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
                 </iframe>
             </div>
@@ -408,52 +433,62 @@
     </section>
 
     <!-- PATROCINADORES  -->
-    <section id="patrocinio">
+    <section class="section" id="patrocinio">
         <div class="container container-mobile patrons">
             <div>
-                <h2>Patrocinadores</h2>
+                <h2 id="pat">Patrocinadores</h2>
                 <div class="flex-row">
-                    <img src="./assets/imagens/logo_nubank.png" title="" class="patron-1">
-                    <img src="./assets/imagens/logo_resultados.png" title="" class="patron-1">
+                    <a href="https://nubank.com.br/"><img src="./assets/imagens/logo_nubank.png" title=""
+                            class="patron-1"></a>
+                    <a href="https://resultadosdigitais.com.br/"><img src="./assets/imagens/logo_resultados.png"
+                            title="" class="patron-1"></a>
                 </div>
                 <div class="flex-patron">
-                    <img src="./assets/imagens/logo_contaazul.png" title="" class="patron-2a">
-                    <img src="./assets/imagens/logo_dafitigroup2.png" title="" class="patron-2a">
-
-                    <img src="./assets/imagens/logo_movile.png" title="" class="patron-2">
-
-
-                    <img src="./assets/imagens/logo_dbserver.png" title="" class="patron-2">
-                    <img src="./assets/imagens/logo_linx.png" title="" class="patron-2b">
+                    <a href="https://contaazul.com/"><img src="./assets/imagens/logo_contaazul.png" title=""
+                            class="patron-2a"></a>
+                    <a href="http://www.dafitigroup.com/o-que-e-a-dafiti-group/"><img
+                            src="./assets/imagens/logo_dafitigroup2.png" title="" class="patron-2a"></a>
+                    <a href="https://movile.com/#/"><img src="./assets/imagens/logo_movile.png" title=""
+                            class="patron-2"></a>
+                    <a href="https://dbserver.com.br/"><img src="./assets/imagens/logo_dbserver.png" title=""
+                            class="patron-2"></a>
+                    <a href="https://www.linx.com.br/"><img src="./assets/imagens/logo_linx.png" title=""
+                            class="patron-2b"></a>
                 </div>
             </div>
-
-
             <div class="apoio flex-column">
                 <p class="title-patron">Apoio</p>
                 <div class="flex-patron">
-                    <img src="./assets/imagens/logo_alura.png" title="" class="patron-3">
-                    <img src="./assets/imagens/logo_ppm.png" title="" class="patron-3">
-                    <img src="./assets/imagens/logo_hiflex.png" title="" class="patron-3">
-                    <img src="./assets/imagens/logo_kinghost.png" title="" class="patron-3">
+                    <a href="https://www.alura.com.br/"><img src="./assets/imagens/logo_alura.png" title=""
+                            class="patron-3"></a>
+                    <a href="https://ppmeducation.com.br/"><img src="./assets/imagens/logo_ppm.png" title=""
+                            class="patron-3"></a>
+                    <a href="http://hiflexconsultoria.com.br/"><img src="./assets/imagens/logo_hiflex.png" title=""
+                            class="patron-3"></a>
+                    <a href="https://king.host/"><img src="./assets/imagens/logo_kinghost.png" title=""
+                            class="patron-3"></a>
                 </div>
                 <div class="flex-row">
-                    <img src="./assets/imagens/logo_lean.png" title="" class="patron-3">
-                    <img src="./assets/imagens/logo_garage.png" title="" class="patron-3a">
-                    <img src="./assets/imagens/logo_pm3.png" title="" class="patron-3">
+                    <a href="https://www.caroli.org/"><img src="./assets/imagens/logo_lean.png" title=""
+                            class="patron-3"></a>
+                    <a href="https://www.garagecriativa.com.br/"><img src="./assets/imagens/logo_garage.png" title=""
+                            class="patron-3a"></a>
+                    <a href="https://www.cursospm3.com.br/"><img src="./assets/imagens/logo_pm3.png" title=""
+                            class="patron-3"></a>
                 </div>
             </div>
             <div class="org flex-column">
                 <p class="title-patron">Co-organização</p>
                 <div class="flex-patron">
-                    <img src="./assets/imagens/logo_agilealliance.png" title="" class="patron-3">
+                    <a href="https://www.agilealliance.org/pt"><img src="./assets/imagens/logo_agilealliance.png"
+                            title="" class="patron-3"></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CONTATO  -->
-    <section id="contato" class="bg-contato">
+    <section id="contato" class="bg-contato section">
         <div class="container-contato">
             <form>
                 <fieldset class="contato-box">
@@ -471,32 +506,45 @@
 
     <!-- FOOTER  -->
     <footer>
-        <div>
-            <div class="footer__bg">
-
-                <div>
-                    <img src="./assets/imagens/logo_mdp.png" alt="logo mulheres de produto"
-                        title="logo mulheres de produto" class="logo--footer">
-                </div>
-                <ul>
-                    <li><img class="icones--footer" src="./assets/imagens/medium.png" alt="ícone para o Medium"></li>
-                    <li><img class="icones--footer" src="./assets/imagens/slack.png" alt="ícone para o Slack"></li>
-                    <li><img class="icones--footer" src="./assets/imagens/instagram.png" alt="ícone para o Instagram">
-                    </li>
-                    <li><img class="icones--footer" src="./assets/imagens/facebook.png" alt="ícone para o Facebook">
-                    </li>
-                    <li><img class="icones--footer" src="./assets/imagens/linkedin.png" alt="ícone para o Linkedin">
-                    </li>
-                    <li><img class="icones--footer" src="./assets/imagens/meetup.png" alt="ícone para o Meetup"></li>
-                    <li><img class="icones--footer" src="./assets/imagens/twitter.png" alt="ícone para o Twitter"></li>
-                    <li><img class="icones--footer" src="./assets/imagens/youtube.png" alt="ícone para o Youtube"></li>
-                </ul>
+        <div class="footer__bg">
+            <div>
+                <a href="#home"><img src="./assets/imagens/logo_mdp.png" alt="logo mulheres de produto" title="logo mulheres de produto"
+                    class="logo--footer"></a>
             </div>
+            <ul class="redes-sociais-footer">
 
+                <li><a href="https://medium.com/mulheres-de-produto"><img class="icones--footer"
+                            src="./assets/imagens/medium.png" alt="ícone para o Medium"></a></li>
+
+
+                <li><a href="https://www.instagram.com/mulheresdeproduto/"><img class="icones--footer"
+                            src="./assets/imagens/instagram.png" alt="ícone para o Instagram"></a></li>
+
+                <li><a href="https://www.facebook.com/mulheresdeproduto"><img class="icones--footer"
+                            src="./assets/imagens/facebook.png" alt="ícone para o Facebook"></a>
+                </li>
+
+                <li><a href="https://pt.linkedin.com/company/mulheres-de-produto"><img class="icones--footer"
+                            src="./assets/imagens/linkedin.png" alt="ícone para o Linkedin"></a>
+                </li>
+
+                <li><a href="https://www.meetup.com/pt-BR/Mulheres-de-Produto/"><img class="icones--footer"
+                            src="./assets/imagens/meetup.png" alt="ícone para o Meetup"></a></li>
+
+
+                <li><a href="https://twitter.com/mulheresproduto"><img class="icones--footer"
+                            src="./assets/imagens/twitter.png" alt="ícone para o Twitter"></a></li>
+
+
+                <li><a href="https://www.youtube.com/channel/UCX7-a5T_6Ezu_livuVjNtrA"><img class="icones--footer"
+                            src="./assets/imagens/youtube.png" alt="ícone para o Youtube"></a></li>
+
+            </ul>
         </div>
+
         <div class="footer__menor">
-            <p>Mulheres de Produto © 2019. Desenvolvido pelas alunas da <span
-                    class="footer__reprograma">{Reprograma}</span></p>
+            <p>Mulheres de Produto © 2019. Desenvolvido pelas alunas da <a href="https://reprograma.com.br/"><span
+                    class="footer__reprograma">{reprograma}</span></a></p>
         </div>
     </footer>
 

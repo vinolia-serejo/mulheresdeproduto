@@ -17,10 +17,19 @@ button {
 .container {
   width: 80%;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
-ul {
-  padding-left: 0;
+.redes-socias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 li {
@@ -46,8 +55,17 @@ a:hover {
   }
 }
 
+@media (min-width: 2000px) {
+  body {
+    font-size: 20px;
+  }
+  .container {
+    max-width: 1800px;
+  }
+}
+
 .nav {
-  padding: 30px 0;
+  padding: 20px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -80,7 +98,7 @@ a:hover {
 }
 
 .logo--nav {
-  width: 200px;
+  width: 180px;
   margin-right: 35px;
 }
 
@@ -116,12 +134,20 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 800px) {
+.active {
+  color: #f7425a;
+}
+
+#link_logo:hover {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
   .menu {
     display: none;
   }
   .logo--nav {
-    width: 150px;
+    width: 100px;
   }
   .responsive-menu {
     display: block;
@@ -156,7 +182,13 @@ a:hover {
     padding: 15px 0;
     text-transform: uppercase;
     border-bottom: 2px solid #fff;
-    width: 30%;
+    width: 41%;
+  }
+}
+
+@media (max-width: 650px) {
+  .logo--nav {
+    min-width: 80px;
   }
 }
 
@@ -167,11 +199,13 @@ a:hover {
   .btn--nav {
     font-size: 11px;
     padding: 8px 18px;
+    margin-left: 20px;
     -webkit-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.171);
             box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.171);
   }
   .logo--nav {
     min-width: 100px;
+    margin-right: 10px;
   }
 }
 
@@ -312,6 +346,13 @@ a:hover {
   .box {
     font-size: 12px;
     width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .icon--header {
     width: 30px;
@@ -336,7 +377,7 @@ a:hover {
     width: 100%;
   }
   .header--titulo {
-    font-size: 50px;
+    font-size: 46px;
     margin-top: 60px;
   }
   .subtitle-container {
@@ -431,6 +472,8 @@ a:hover {
   font-weight: bold;
   text-transform: uppercase;
   margin-right: 7%;
+  padding: 0;
+  text-align: left;
 }
 
 .icones {
@@ -442,23 +485,17 @@ a:hover {
   width: 150px;
 }
 
-ul {
+.redes-sociais {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: "center";
-      -ms-flex-align: "center";
-          align-items: "center";
-  -webkit-box-pack: "center";
-      -ms-flex-pack: "center";
-          justify-content: "center";
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-ul li {
-  margin-right: 3%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 16px;
 }
 
 @media (max-width: 420px) {
@@ -476,10 +513,25 @@ ul li {
   }
 }
 
+@media (max-width: 1024px) {
+  .container__conteudo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container__conteudo--imagem {
+    display: none;
+  }
+}
+
 table {
   background-color: #F0F0F0;
   width: 60%;
-  margin: 0.5% auto;
+  margin: 1.2% auto;
 }
 
 table tr {
@@ -510,8 +562,17 @@ table tr:first-child {
 }
 
 @media (max-width: 420px) {
+  .container__agenda h2 {
+    font-size: 25px;
+  }
   .container__horario {
-    width: 20%;
+    width: 40%;
+  }
+}
+
+@media (max-width: 780px) {
+  table {
+    width: 80%;
   }
 }
 
@@ -519,7 +580,7 @@ table tr:first-child {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 0, 255, 0.322))), url("../assets/imagens/nubank.jpg");
   background-image: linear-gradient(rgba(217, 0, 255, 0.322)), url("../assets/imagens/nubank.jpg");
   background-position: cover;
-  height: 124vh;
+  height: 117vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -618,8 +679,174 @@ table tr:first-child {
   height: 300px;
 }
 
+@media (max-width: 600px) {
+  .background {
+    background-color: #792b77;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .logo_img {
+    margin-top: 5%;
+    width: 191px;
+  }
+  .logo {
+    height: 164px;
+    padding: 2%;
+    text-align: center;
+  }
+  .textos {
+    width: 82%;
+  }
+  .caixa_mapa {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .background {
+    background-color: #792b77;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .logo_img {
+    margin-top: 5%;
+    width: 191px;
+  }
+  .logo {
+    height: 164px;
+    padding: 2%;
+    text-align: center;
+  }
+  .textos {
+    width: 82%;
+  }
+  .caixa_mapa {
+    height: 241px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .background {
+    background-color: #792b77;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .logo_img {
+    margin-top: 5%;
+    width: 191px;
+  }
+  .logo {
+    height: 164px;
+    padding: 2%;
+    text-align: center;
+  }
+  .textos {
+    width: 82%;
+  }
+  .caixa_mapa {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .background {
+    background-color: #792b77;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .logo_img {
+    margin-top: 5%;
+    width: 191px;
+  }
+  .logo {
+    height: 128px;
+    padding: 2%;
+    text-align: center;
+  }
+  .textos {
+    width: 82%;
+  }
+  .caixa_mapa {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .background {
+    background-color: #792b77;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .logo_img {
+    margin-top: 5%;
+    width: 191px;
+  }
+  .logo {
+    height: 128px;
+    padding: 2%;
+    text-align: center;
+  }
+  .textos {
+    width: 82%;
+  }
+  .caixa_mapa {
+    width: 100%;
+  }
+}
+
 h2 {
-  padding: 5%;
+  padding-top: 5%;
   text-align: center;
   margin: 0;
   text-transform: uppercase;
@@ -630,10 +857,6 @@ h2 {
 .palestrantes {
   background-color: #792b77;
   padding-bottom: 5%;
-}
-
-.vejaMais {
-  display: none;
 }
 
 .cards {
@@ -667,6 +890,14 @@ h2 {
   width: 100%;
 }
 
+.veja-mais {
+  display: none;
+}
+
+.hide-cards {
+  display: inline-block;
+}
+
 .over {
   -webkit-transition: .5s ease;
   transition: .5s ease;
@@ -692,12 +923,13 @@ h2 {
   position: absolute;
   opacity: 1;
   display: block;
-  width: 216px;
+  max-width: 216px;
   height: 230px;
   -webkit-transition: .5s ease;
   transition: .5s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  width: 100%;
 }
 
 .card {
@@ -716,15 +948,19 @@ h2 {
           flex-flow: column wrap;
   width: 20%;
   margin: 5% 2.5% 0% 2.5%;
-  height: 300px;
   -webkit-box-shadow: 7px 6px 18px -5px rgba(0, 0, 0, 0.4);
   box-shadow: 7px 6px 18px -5px rgba(0, 0, 0, 0.4);
   position: relative;
+  max-height: 100%;
 }
 
 .card .texto__card {
   background-color: white;
   width: 100%;
+}
+
+.card .imagem__card {
+  background-color: transparent;
 }
 
 .card .imagem__card > img {
@@ -745,6 +981,10 @@ h2 {
 }
 
 @media (max-width: 420px) {
+  h2 {
+    font-size: 25px;
+    padding-bottom: 18px;
+  }
   .palestrantes {
     background-color: #F0F0F0;
   }
@@ -759,15 +999,13 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #mobile-cards {
-    display: none;
-  }
   .card {
     width: 40%;
   }
   .icone_linkedin {
-    width: 100px;
-    height: 115px;
+    width: 100%;
+    max-width: 216px;
+    display: none;
   }
   #h2-mobile {
     color: #990c6e;
@@ -777,6 +1015,13 @@ h2 {
     text-transform: uppercase;
     color: #990c6e;
     font-weight: 600;
+    padding-top: 20px;
+  }
+  .hide-cards {
+    display: none;
+  }
+  .over {
+    display: none;
   }
 }
 
@@ -881,7 +1126,7 @@ h2 {
     font-size: 14px;
   }
   .patron-1 {
-    height: 50px;
+    height: 44px;
     padding: 5px;
   }
   .patron-2 {
@@ -922,7 +1167,7 @@ h2 {
 }
 
 .contato-p {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 20px;
 }
 
@@ -930,7 +1175,7 @@ h2 {
   margin-top: 15px;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .input {
@@ -946,10 +1191,11 @@ h2 {
 
 .contato-box {
   display: block;
-  margin: 2px;
+  margin: auto;
   padding: 25px;
   padding-top: 5px;
   border: 2px solid #792b77;
+  max-width: 700px;
 }
 
 .contato-box legend {
@@ -957,6 +1203,7 @@ h2 {
   color: #792b77;
   padding: 0 5px;
   font-weight: 600;
+  font-size: 22px;
 }
 
 .submit-contato {
@@ -965,6 +1212,7 @@ h2 {
   color: #fff;
   padding: 10px 15px;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .submit-contato:hover {
@@ -1005,25 +1253,37 @@ h2 {
 .footer__bg .logo--footer {
   width: 150px;
   margin-top: 25px;
-  margin-bottom: 25px;
 }
 
-.footer__bg ul, .footer__bg li {
-  margin-bottom: 15px;
-  padding-left: 7px;
+.footer__bg li {
+  padding-left: 10px;
   opacity: 0.6;
 }
 
-.footer__menor {
+.footer__bg ul {
+  width: 38%;
+  margin: 25px auto;
+}
+
+.footer__bg .redes-sociais-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 420px) {
+  .footer__bg ul {
+    width: 86%;
+  }
+}
+
+.footer__menor {
   padding: 10px;
   color: #F0F0F0;
 }
