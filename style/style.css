@@ -1136,6 +1136,9 @@ h2 {
   .footer__bg ul {
     width: 75%;
   }
+  footer {
+    font-size: 14px;
+  }
 }
 
 .footer__menor {
