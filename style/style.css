@@ -679,7 +679,7 @@ table tr:first-child {
   height: 300px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 600px) {
   .background {
     background-color: #792b77;
     display: -webkit-box;
@@ -1281,24 +1281,18 @@ h2 {
   .footer__bg ul {
     width: 86%;
   }
-  footer {
-    font-size: 14px;
-  }
 }
 
 .footer__menor {
-  width: 100%;
   padding: 10px;
   color: #F0F0F0;
-  background-color: #41292e;
-  text-align: center;
 }
 
 footer {
   text-align: center;
   color: #fff;
   font-size: 12px;
-  background-color: #2a1419;
+  background-color: #41292e;
 }
 
 .footer__reprograma {
@@ -1307,15 +1301,6 @@ footer {
 
 .icones--footer {
   width: 25px;
-}
-
-@media (max-width: 350px) {
-  .icones--footer {
-    width: 18px;
-  }
-  .footer__bg ul {
-    width: 60%;
-  }
 }
 
 * {

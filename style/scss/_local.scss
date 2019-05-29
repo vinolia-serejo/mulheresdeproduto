@@ -69,6 +69,33 @@
     height: 300px;
 }
 
+@media(max-width:600px){
+    
+    .background {
+        background-color: $cor-fundo-roxo;
+        @include flex(center, center); 
+        background-repeat: no-repeat;
+        background-size: cover;  
+        background-position: center;
+    }
+    .logo_img{
+        margin-top: 5%; 
+        width: 191px; 
+    }
+    .logo{
+        height: 164px;
+        padding: 2%; 
+        text-align: center; 
+    }
+    .textos{
+        width: 82%; 
+    }
+    .caixa_mapa{
+        width: 100%;
+    }
+}
+
+
 @media(max-width: 420px){
 
     .background {
@@ -92,39 +119,10 @@
         width: 82%; 
     }
     .caixa_mapa{
-        width: 100%;
-    }
-}
-
-@media(max-width:600px){
-    
-    .background {
-        background-color: $cor-fundo-roxo;
-        @include flex(center, center); 
-        background-repeat: no-repeat;
-        background-size: cover;  
-        background-position: center;
-    }
-    .logo_img{
-        margin-top: 5%; 
-        width: 191px; 
-    }
-    .logo{
-        height: 164px;
-        padding: 2%; 
-        text-align: center; 
-    }
-    .textos{
-        width: 82%; 
-    }
-    .caixa_mapa{
         height: 241px;
         width: 100%;
     }
 }
-
-
-
 
 @media(max-width: 720px){
     .background {
@@ -152,23 +150,19 @@
     }
 }
 
-@media(max-width: 800px){
+@media(max-width: 900px){
     .background {
         background-color: $cor-fundo-roxo;
         @include flex(center, center); 
         background-repeat: no-repeat;
         background-size: cover;  
         background-position: center;
-        // height: 76vh;
-
     }
-
     .logo_img{
         margin-top: 5%; 
         width: 191px; 
     }
 
-    // CHECKED
     .logo{
         height: 128px;
         padding: 2%; 
@@ -203,7 +197,6 @@
         padding: 2%; 
         text-align: center; 
     }
-
     .textos{
         width: 82%; 
 
