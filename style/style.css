@@ -731,6 +731,7 @@ table tr:first-child {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 130vh;
   }
   .logo_img {
     margin-top: 5%;
@@ -971,7 +972,6 @@ h2 {
 
 .card .imagem__card > img:hover {
   opacity: 0.6;
-  cursor: pointer;
 }
 
 .card .cargo {
