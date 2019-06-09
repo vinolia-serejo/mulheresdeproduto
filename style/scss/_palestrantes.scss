@@ -90,6 +90,11 @@ h2{
     .imagem__card > img {
         position: relative;
         width:100%;
+
+        &:hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
        
     }
 
@@ -107,6 +112,7 @@ h2{
         padding-left: 10px;
         color: $cor-btn;
         font-size: $fonte-padrao;
+        cursor: pointer;
     }
 }
 
