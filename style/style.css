@@ -116,7 +116,7 @@ a:hover {
 }
 
 .btn {
-  background-color: #f7425a;
+  background-color: #dd3d53;
   padding: 15px 25px;
   color: #fff;
   font-size: 18px;
@@ -199,7 +199,7 @@ a:hover {
   .btn--nav {
     font-size: 11px;
     padding: 8px 18px;
-    margin-left: 20px;
+    margin-left: 36px;
     -webkit-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.171);
             box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.171);
   }
@@ -412,7 +412,7 @@ a:hover {
 }
 
 .container__sobre {
-  background-color: #aa485f;
+  background-color: #dd3d53;
 }
 
 .container__conteudo {
@@ -539,13 +539,13 @@ table tr {
 }
 
 table tr:first-child {
-  color: #f7425a;
+  color: #dd3d53;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .destaque__agenda {
-  color: #2a1419;
+  color: #1d1819;
 }
 
 .container__agenda h2 {
@@ -976,7 +976,7 @@ h2 {
 .card h6 {
   margin: 10px 0px 0px 0px;
   padding-left: 10px;
-  color: #f7425a;
+  color: #dd3d53;
   font-size: 16px;
 }
 
@@ -1122,10 +1122,12 @@ h2 {
 }
 
 @media (max-width: 420px) {
-  
+  .patrons {
+    padding: 25px;
+  }
   .patrons h2 {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     color: #990c6e;
   }
 }
@@ -1256,7 +1258,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #2a1419;
+  background-color: #1d1819;
 }
 
 .footer__bg .logo--footer {
@@ -1301,7 +1303,7 @@ footer {
   text-align: center;
   color: #fff;
   font-size: 12px;
-  background-color: #41292e;
+  background-color: #312f2f;
 }
 
 .footer__reprograma {
