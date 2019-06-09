@@ -66,6 +66,19 @@
     flex-direction: column; 
 }
 
+@media (max-width: 420px){
+    .patrons {
+        padding: 25px;
+    
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            color: $cor-fonte-roxo;
+        }
+    }
+}
+
+
 @media (max-width: 700px){
 
   .title-patron {
