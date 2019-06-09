@@ -18,7 +18,9 @@ h2{
 }
 
 .row_cards{
-    @include flex(center, space-between);
+    // @include flex(center);
+    display: flex;
+    align-items: center;
     flex-flow: row wrap;
     width: 100%;
 }
@@ -91,8 +93,12 @@ h2{
        
     }
 
+    .cargo {
+        font-weight: bold
+    }
+
     p{ 
-        margin: 5px 0px 10px 0px;
+        margin: 0px 0px 6px 0px;
         padding-left: 10px
     }
 
