@@ -1,0 +1,29 @@
+{
+  "name": "mulheresdeproduto",
+  "version": "1.0.0",
+  "description": "mulheres de produto day site ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raissamartinsmenezes/mulheresdeproduto.git"
+  },
+  "keywords": [
+    "site",
+    "mulheres",
+    "de",
+    "produto",
+    "day\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D"
+  ],
+  "author": "Raissa Martins, Vinólia Serejo, Jéssica Lopes, Carolina Luditza, Andressa Santos, Leticia Monteiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raissamartinsmenezes/mulheresdeproduto/issues"
+  },
+  "homepage": "https://github.com/raissamartinsmenezes/mulheresdeproduto#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

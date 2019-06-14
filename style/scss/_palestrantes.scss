@@ -18,7 +18,9 @@ h2{
 }
 
 .row_cards{
-    @include flex(center, space-between);
+    // @include flex(center);
+    display: flex;
+    align-items: center;
     flex-flow: row wrap;
     width: 100%;
 }
@@ -88,11 +90,19 @@ h2{
     .imagem__card > img {
         position: relative;
         width:100%;
+
+        &:hover {
+            opacity: 0.6;
+        }
        
     }
 
+    .cargo {
+        font-weight: bold
+    }
+
     p{ 
-        margin: 5px 0px 10px 0px;
+        margin: 0px 0px 6px 0px;
         padding-left: 10px
     }
 
@@ -101,6 +111,7 @@ h2{
         padding-left: 10px;
         color: $cor-btn;
         font-size: $fonte-padrao;
+        cursor: pointer;
     }
 }
 

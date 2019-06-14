@@ -1,5 +1,5 @@
 .container__sobre {
-    background-color: $cor-fundo-sobre;
+    background-color: $cor-btn;
 }
 
 .container__conteudo {
@@ -13,6 +13,11 @@
 .container__conteudo--imagem {
 width: 100%;
 height: auto;
+
+&:hover {
+    opacity: 0.6;
+}
+
 }
 
 .container__conteudo--artigo {
@@ -23,7 +28,7 @@ width: 65%;
 }
 
 .container__conteudo--btn {
-    background-color: #ba6e7f;
+    background-color: #df5f70;
     color: $cor-branca;
     font-weight: bold;
     text-transform: uppercase;
