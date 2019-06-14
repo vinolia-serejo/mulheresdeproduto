@@ -150,6 +150,7 @@
     .caixa_mapa{
         width: 100%;
     }
+<<<<<<< HEAD
 }
 
 <<<<<<< HEAD
@@ -266,6 +267,37 @@
     }
 }
 
+=======
+}
+
+@media(max-width: 900px){
+    .background {
+        background-color: $cor-fundo-roxo;
+        @include flex(center, center); 
+        background-repeat: no-repeat;
+        background-size: cover;  
+        background-position: center;
+
+    }
+    .logo_img{
+        margin-top: 5%; 
+        width: 191px; 
+    }
+
+    .logo{
+        height: 128px;
+        padding: 2%; 
+        text-align: center; 
+    }
+    .textos{
+        width: 82%; 
+    }
+    .caixa_mapa{
+        width: 100%;
+    }
+}
+
+>>>>>>> 009a6dfc73cc226620bc0c1a5e1474c05e3cf050
 @media(max-width: 1024px){
 
     .background {
@@ -289,7 +321,11 @@
     }
     .textos{
 <<<<<<< HEAD
+<<<<<<< HEAD
         width: 82%; 
+=======
+        width: 70%; 
+>>>>>>> 009a6dfc73cc226620bc0c1a5e1474c05e3cf050
 =======
         width: 70%; 
 >>>>>>> 009a6dfc73cc226620bc0c1a5e1474c05e3cf050

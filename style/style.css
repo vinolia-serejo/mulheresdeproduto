@@ -200,7 +200,11 @@ a:hover {
     font-size: 11px;
     padding: 8px 18px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-left: 20px;
+=======
+    margin-left: 36px;
+>>>>>>> 009a6dfc73cc226620bc0c1a5e1474c05e3cf050
 =======
     margin-left: 36px;
 >>>>>>> 009a6dfc73cc226620bc0c1a5e1474c05e3cf050
@@ -575,7 +579,11 @@ table tr:first-child {
   }
   .container__horario {
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 40%;
+=======
+    width: 44%;
+>>>>>>> 009a6dfc73cc226620bc0c1a5e1474c05e3cf050
 =======
     width: 44%;
 >>>>>>> 009a6dfc73cc226620bc0c1a5e1474c05e3cf050
@@ -856,6 +864,7 @@ table tr:first-child {
   .caixa_mapa {
     width: 100%;
   }
+<<<<<<< HEAD
 }
 
 @media (max-width: 600px) {
@@ -1022,6 +1031,8 @@ table tr:first-child {
   .caixa_mapa {
     width: 100%;
   }
+=======
+>>>>>>> 009a6dfc73cc226620bc0c1a5e1474c05e3cf050
 }
 
 h2 {
@@ -1208,6 +1219,7 @@ h2 {
   .over {
     display: none;
   }
+<<<<<<< HEAD
 }
 
 @media (max-width: 420px) {
@@ -1253,6 +1265,8 @@ h2 {
   .over {
     display: none;
   }
+=======
+>>>>>>> 009a6dfc73cc226620bc0c1a5e1474c05e3cf050
 }
 
 .patrons {
